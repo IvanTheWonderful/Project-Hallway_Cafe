@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>time</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contact" transform="translate(-536.000000, -237.000000)" fill="#FFD16B" fill-rule="nonzero" stroke="#FFD16B">
+            <g id="time" transform="translate(537.000000, 238.000000)">
+                <path d="M11.5,23 C5.14872538,23 0,17.8512746 0,11.5 C0,5.14872538 5.14872538,0 11.5,0 C17.8512746,0 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z M11.5,20.7 C16.5810197,20.7 20.7,16.5810197 20.7,11.5 C20.7,6.4189803 16.5810197,2.3 11.5,2.3 C6.4189803,2.3 2.3,6.4189803 2.3,11.5 C2.3,16.5810197 6.4189803,20.7 11.5,20.7 Z M10.35,11.9715 L10.35,4.6 L12.65,4.6 L12.65,11.0285 L17.1925,15.571 L15.571,17.1925 L10.35,11.9715 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
