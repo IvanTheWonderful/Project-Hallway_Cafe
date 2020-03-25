@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.main-restaurant-image {
+    max-width: 100%;
+    position: absolute;
+}
+
