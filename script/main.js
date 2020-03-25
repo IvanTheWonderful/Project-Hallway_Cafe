@@ -1,7 +1,13 @@
-//function myMap() {
-//  var mapProp = {
-//    center: new google.maps.LatLng(51.508742, -0.12085),
-//    zoom: 5
-//  };
-//  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-//}
+const button = document.getElementById("btn");
+const menu = document.getElementById("menu");
+
+
+function toggleMenu() {
+    if (menu.classList.contains("menu-show") === false){
+        menu.classList.add("menu-show");
+        menu.classList.remove("menu-hide");
+    } else {
+        menu.classList.add("menu-hide");
+        menu.classList.remove("menu-show");
+    }
+}
