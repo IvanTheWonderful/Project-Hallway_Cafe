@@ -2,8 +2,8 @@ body {
     margin: 0;
 }
 
-.main-restaurant-image {
+.main-restaurant-image img{
     max-width: 100%;
-    position: absolute;
+    /* position: absolute; */
 }
 
