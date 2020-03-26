@@ -4,85 +4,6 @@ body {
     margin: 0;
 }
 
-
-/* Start: nav */
-nav {
-    position: fixed;
-    display: flex;
-    top: 0;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 10px 0;
-    background: white;
-}
-
-nav img {
-    width: 6rem;
-}
-
-nav a, nav .fa {
-    display: none;
-}
-
-.nav-menu-button {
-    position: absolute;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: 1px black solid;
-}
-
-.nav-menu-button div {
-    position: absolute;
-    background: black;
-    width: 2.5rem;
-    height: 5px;
-    transform: translateY(-50%);
-}
-
-.nav-menu-button-1and4-activated {
-    animation: disappear 0.2s forwards;
-}
-
-.nav-menu-button-2-activated {
-    animation: rotateClockwise 0.2s forwards;
-}
-
-.nav-menu-button-3-activated {
-    animation: rotateCounterClockwise 0.2s forwards;
-}
-
-.nav-menu-button-1and4-deactivated {
-    animation: appear 0.2s forwards;
-}
-
-.nav-menu-button-2-deactivated {
-    animation: undoRotateClockwise 0.2s forwards;
-}
-
-.nav-menu-button-3-deactivated {
-    animation: undoRotateCounterClockwise 0.2s forwards;
-}
-
-.nav-menu-button div:nth-of-type(1) {
-    top: 35%;
-}
-
-.nav-menu-button div:nth-of-type(2) {
-    top: 50%;
-}
-
-.nav-menu-button div:nth-of-type(3) {
-    top: 50%;
-}
-
-.nav-menu-button div:nth-of-type(4) {
-    top: 65%;
-}
-/* End: nav */
 /* Start: homepage */
 .homepage {
     display: flex;
@@ -126,6 +47,7 @@ nav a, nav .fa {
     width: max-content;
 }
 /* End: homepage */
+
 /* Start: footer */
 footer {
     text-align: center;
@@ -139,63 +61,7 @@ footer a {
     margin: 1rem;
 }
 /* End: footer */
-/* Start: animation */
-@keyframes disappear {
-    0% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-    }
-}
 
-@keyframes appear {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-@keyframes rotateClockwise {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@keyframes undoRotateClockwise {
-    0% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        transform: translateY(-50%);
-    }
-}
-
-@keyframes rotateCounterClockwise {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-45deg);
-    }
-}
-
-@keyframes undoRotateCounterClockwise {
-    0% {
-        transform: rotate(-45deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        transform: translateY(-50%);
-    }
-}
-/* End: animation */
 /* Start: media query */
 @media only screen and (min-width: 600px) {
 
