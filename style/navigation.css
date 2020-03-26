@@ -8,6 +8,11 @@ nav {
     background: white;
 }
 
+.nav-mobile {
+    position: absolute;
+    right: 0;
+}
+
 .nav-desktop img {
     width: 6rem;
 }
