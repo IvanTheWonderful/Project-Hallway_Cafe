@@ -1,17 +1,49 @@
+body {
+    margin-top: 5em;
+}
+
 h2 {
     font-family: "Montserrat-Bold";
     text-transform: uppercase;
     color: #139c93;
 }
 
-section img {
+h3 {
+    font-family: 'Montserrat-Bold';
+    color: #f4f7f2;
+}
+
+img {
     max-width: 100%;
     /* display: none; */
 }
 
+.feature-food-carousel article {
+    background: #ffd16b;
+}
+
+.menu {
+    text-align: center;
+}
+
+.customer-review-carousel {
+    text-align: center;
+}
+
+.quote {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
 .dinein-photos {
     display: grid;
-    grid-template-areas: "brussel  caesar" "parfait smoked" "turkey hawaiian" "cappucino pancetta" "tartar soup" "buckwheat nonna";
+    grid-template-areas: 
+    "brussel  caesar" 
+    "parfait smoked" 
+    "turkey hawaiian" 
+    "cappucino pancetta" 
+    "tartar soup" 
+    "buckwheat nonna";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 10px;
@@ -64,4 +96,17 @@ section img {
 
 .nonna-nightmare {
     grid-area: brussel;
+}
+
+
+footer {
+    text-align: center;
+    margin: 0 3rem;
+    color: #585a5e;
+}
+
+footer a {
+    color: #585a5e;
+    text-decoration: none;
+    margin: 1rem;
 }
