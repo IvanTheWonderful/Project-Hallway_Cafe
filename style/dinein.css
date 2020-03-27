@@ -1,5 +1,5 @@
 h2 {
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
     text-transform: uppercase;
     color: #139c93;
 }
@@ -7,4 +7,61 @@ h2 {
 section img {
     max-width: 100%;
     /* display: none; */
+}
+
+.dinein-photos {
+    display: grid;
+    grid-template-areas: "brussel  caesar" "parfait smoked" "turkey hawaiian" "cappucino pancetta" "tartar soup" "buckwheat nonna";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.brussel-sprouts {
+    grid-area: brussel;
+}
+
+.caesar {
+    grid-area: caesar;
+}
+
+.parfait {
+    grid-area: parfait;
+}
+
+.smoked-salmon {
+    grid-area: smoked;
+}
+
+.turkey-dinner {
+    grid-area: turkey;
+}
+
+.hawaiian-pizza {
+    grid-area: hawaiian;
+}
+
+.cappucino {
+    grid-area: cappucino;
+}
+
+.pancetta-salad {
+    grid-area: pancetta;
+}
+
+.salmon-tartar {
+    grid-area: tartar;
+}
+
+.soup-toast {
+    grid-area: soup;
+}
+
+.buckwheat {
+    grid-area: buckwheat;
+}
+
+.nonna-nightmare {
+    grid-area: brussel;
 }
