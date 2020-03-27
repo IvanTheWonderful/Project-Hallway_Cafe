@@ -31,8 +31,6 @@ function toggleButton() {
 }
 
 // show/hide drawer menu
-console.log(menu.classList.contains("nav-mobile-list-hidden"))
-
 function toggleMenu() {
     if (menu.classList.contains("nav-mobile-list-hidden")){
         menu.classList.add("nav-mobile-list-shown");
