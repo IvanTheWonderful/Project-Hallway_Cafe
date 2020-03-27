@@ -4,12 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hallway Caf&egrave;</title>
-   
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../style/navigation.css">
+    <link rel="stylesheet" href="../style/aboutus.css">
+    <script src="../script/main.js" defer></script>
 </head>
 
 <body>
+    <nav>
+        <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
+        <div class="nav-desktop">
+            <a href="../src/aboutus.html" target="_blank" rel="noopener noreferrer">ABOUT US</a>
+            <a href="../src/dinein.html" target="_blank" rel="noopener noreferrer">DINE IN</a>
+            <a href="../src/catering.html" target="_blank" rel="noopener noreferrer">CATERING</a>
+            <img src="../img/Icons/Desktop Icons/v-logo.png" alt="The logo of Hallway Cafe." />
+            <a href="../src/contact.html" target="_blank" rel="noopener noreferrer">CONTACT</a>
+            <a href="../src/blog.html" target="_blank" rel="noopener noreferrer">BLOG</a>
+            <a href="#" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+            <a href="#" class="fa fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
+            <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
+            <button class="nav-mobile-button">
+                <div id="nav-mobile-button-div1"></div>
+                <div id="nav-mobile-button-div2"></div>
+                <div id="nav-mobile-button-div3"></div>
+                <div id="nav-mobile-button-div4"></div>
+            </button>
+            <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
+                <li><a href="../src/aboutus.html" target="_blank" rel="noopener noreferrer">ABOUT US</a></li>
+                <li><a href="../src/dinein.html" target="_blank" rel="noopener noreferrer">DINE IN</a></li>
+                <li><a href="../src/catering.html" target="_blank" rel="noopener noreferrer">CATERING</a></li>
+                <li><a href="../src/contact.html" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+                <li><a href="../src/blog.html" target="_blank" rel="noopener noreferrer">BLOG</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <nav class="head-nav">
             <a href="aboutus.html" target="_blank">ABOUT US</a>
@@ -22,79 +54,67 @@
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-twitter"></a>
         </nav>
-
         <section class="img-bar">
-            <img src="../img/About Us/pizza-assembly.jpg" alt="Images of restaurant">
-            <img src="./img/About Us/Illustration - About Us.svg" alt="Bars">
+            <img class="pizza-assembly" src="../img/About Us/pizza-assembly.jpg" alt="Assembly of pizza">
+            <img class="order-up" src="../img/About Us/order-up.jpg" alt="Order is ready">
+            <img class="veggie-tray" src="../img/About Us/veggie-tray.png" alt="Order is ready">
+            <img class="front-door" src="../img/About Us/front-door.jpg" alt="front door">
+            <img class="cross-illus" src="../img/About Us/Illustration - About Us.svg" alt="">
         </section>
-
-        <section class="grad-cap">
-            <img src="./img/Graduation Cap.png" alt="Graduation Cap">
-            <p>The youth in our program get a hands-on learning opporunity within a complete kitchen </p>
-        </section>
-
-        <section class="grad-cap">
-            <img src="./img/Eco Food.png" alt="Graduation Cap">
-            <p>We developed a menu with a focus on scratch cooking method</p>
-        </section>
-
-        <section class="grad-cap">
-            <img src="./img/Sustainability.png" alt="Graduation Cap">
-            <p>We took the philosphy of sustainability in the kitchen</p>
-        </section>
-        <br>
-        <br>
-
         <section class="about-us">
-            <p>About Us</p>
-            <img src="./img/About Us/hallway.jpg" alt="Soft image of hallway">
-            <img src="./img/About Us/alumni higlight.png" alt="Soft image of hallway">
-            <p>One of our graduates got promoted to a supervisor position with her employer!</p>
+            <h1>About Us</h1>
+            <div class="grad-cap">
+                <img src="../img/Icons/Desktop Icons/Graduation Cap.png" alt="Graduation Cap">
+                <p>The youth in our program get a hands-on learning opporunity within a complete kitchen </p>
+            </div>
 
+            <div class="eco-food">
+                <img src="../img/Icons/Mobile Icons/Eco Food.png" alt="Eco Food">
+                <p>We developed a menu with a focus on scratch cooking method</p>
+            </div>
+
+            <div class="about-sustain">
+                <img src="../img/Icons/Desktop Icons/Sustainability.png" alt="Sustainability">
+                <p>We took the philosphy of sustainability in the kitchen</p>
+            </div>
+        </section>
+        <div class="alumni">
+            <img src="../img/About Us/alumni higlight.png" alt="Soft image of hallway">
+            <p>One of our graduates got promoted to a supervisor position with her employer!</p>
             <div class="carousel-quotes">
-                <!--Need Quotes image-->
-                <p>"Because of this program I can say hey, I'm working and going to school and it feels amazing.</p>
+                <img src="../img/Icons/Desktop Icons/OpenQuotation Mark.png" alt="">
+                <p>Because of this program I can say hey, I'm working and going to school and it feels amazing.
+                </p>
                 <p>Andre Masharin, Edmonton, AB</p>
+                <img src="../img/Icons/Desktop Icons/ClosedQuotationMark.png" alt="">
 
                 <!--Need quotes image-->
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <img src="./img/About Us/Illustration - About Us.svg" alt="Bars">
+                <img class="cross-illus" src="../img/About Us/Illustration - About Us.svg" alt="Bars">
             </div>
+        </div>
         </section>
         <section class="education-support">
             <h2>EDUCATION</h2>
             <p>The Hallway Caf&egrave; Program works with high-risk and at-risk youth.</p>
-
             <h2>SUPPORT</h2>
             <p>Participants can also attend the Fresh Start School, located in City Hall.</p>
-
             <h2>EMPLOYMENT</h2>
             <p>For 17 weeks, you'll gain work experience in a real caf&egrave; under the direction of professional chefs.</p>
-
-            <img src="./img/About Us/plateofcookies.png" alt="Plate of cookies">
-
+            <img src="../img/About Us/heart-cookies.png" alt="Plate of cookies">
             <p>Know of someone who'd benfit from joining us? Let us know!</p>
-
             <form>
                 <label for="name">Your Name</label><br>
                 <input type="text" id="name" name="name"><br>
-
                 <label for="email">Your Email</Address><br></label> <input type="email" id="email" name="email"></br>
-
-
                 <label for="message">Message</label><br>
-
                 <textarea id="message" rows="10" cols="20"></textarea>
                 <br>
-
                 <input type="submit" value="Send Message"><br>
-
             </form>
-
         </section>
-
         <footer>
             <p>
                 The Hallway Caf&egrave; | 1 Sir Winston Churchill Square, Edmonton, AB | Phone: 780-413-8060 | amacbean@e4calberta.org
