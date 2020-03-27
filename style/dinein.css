@@ -37,6 +37,9 @@ img {
 
 .dinein-photos {
     display: grid;
+
+    grid-template-areas: "brussel caesar" "parfait smoked" "turkey hawaiian" "cappucino pancetta" "tartar soup" "buckwheat nonna";
+
     grid-template-areas: 
     "brussel  caesar" 
     "parfait smoked" 
@@ -44,6 +47,7 @@ img {
     "cappucino pancetta" 
     "tartar soup" 
     "buckwheat nonna";
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 10px;
@@ -95,6 +99,56 @@ img {
 }
 
 .nonna-nightmare {
+
+    grid-area: nonna;
+}
+
+@media only screen and (min-width: 800px) {
+    .dinein-photos {
+        display: grid;
+        grid-template-areas: "brussel  caesar parfait" "smoked turkey hawaiian" "cappucino pancetta tartar" "soup buckwheat nonna";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+    .brussel-sprouts {
+        grid-area: brussel;
+    }
+    .caesar {
+        grid-area: caesar;
+    }
+    .parfait {
+        grid-area: parfait;
+    }
+    .smoked-salmon {
+        grid-area: smoked;
+    }
+    .turkey-dinner {
+        grid-area: turkey;
+    }
+    .hawaiian-pizza {
+        grid-area: hawaiian;
+    }
+    .cappucino {
+        grid-area: cappucino;
+    }
+    .pancetta-salad {
+        grid-area: pancetta;
+    }
+    .salmon-tartar {
+        grid-area: tartar;
+    }
+    .soup-toast {
+        grid-area: soup;
+    }
+    .buckwheat {
+        grid-area: buckwheat;
+    }
+    .nonna-nightmare {
+        grid-area: nonna;
+    }
+
     grid-area: brussel;
 }
 
@@ -109,4 +163,5 @@ footer a {
     color: #585a5e;
     text-decoration: none;
     margin: 1rem;
+
 }
