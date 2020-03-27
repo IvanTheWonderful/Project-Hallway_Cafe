@@ -1,6 +1,8 @@
 .img-bar {
     display: grid;
-    grid-template-areas: "pizza veggie" "burger veggie";
+    grid-template-areas: 
+    "pizza veggie" 
+    "burger veggie";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }

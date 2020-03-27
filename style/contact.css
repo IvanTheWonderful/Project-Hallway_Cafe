@@ -1,0 +1,72 @@
+body {
+    margin-top: 10em;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+}
+
+p {
+    font-family: 'Lato-Regular';
+}
+
+img {
+    max-width: 100%;
+}
+
+.hallway-contact {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.hours-of-operation {
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    margin: 0 3rem;
+    color: #585a5e;
+}
+
+footer a {
+    color: #585a5e;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+@media only screen and (min-width:800px) {
+    .container {
+        display: grid;
+        grid-template-areas: "contact hours form"
+        "map map form"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr .5fr;
+    }
+    
+    .contact-info {
+        grid-area: contact;
+    }
+    
+    .hours-of-operation {
+        grid-area: hours;
+    }
+    
+    .location {
+        grid-area: map;
+    }
+    
+    .contact-form {
+        grid-area: form;
+    }
+}
