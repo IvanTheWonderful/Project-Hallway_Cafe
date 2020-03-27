@@ -4,6 +4,7 @@ const div2 = document.getElementById("nav-mobile-button-div2");
 const div3 = document.getElementById("nav-mobile-button-div3");
 const div4 = document.getElementById("nav-mobile-button-div4");
 const menu = document.getElementById("nav-mobile-list");
+const navButton = document.getElementsByClassName
 
 // change the style of the menu button by adding and removing class
 function toggleButton() {
@@ -30,8 +31,6 @@ function toggleButton() {
 }
 
 // show/hide drawer menu
-console.log(menu.classList.contains("nav-mobile-list-hidden"))
-
 function toggleMenu() {
     if (menu.classList.contains("nav-mobile-list-hidden")){
         menu.classList.add("nav-mobile-list-shown");
