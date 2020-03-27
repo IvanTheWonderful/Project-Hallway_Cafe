@@ -83,10 +83,6 @@
     object-fit: contain;
 }
 
-.heart-cookies img {
-    max-width: 100%;
-}
-
 input,
 textarea {
     border: #ffd16b 2px solid;
@@ -96,4 +92,16 @@ textarea {
 
 .hallway-message {
     padding-left: 20%;
+}
+
+footer {
+    text-align: center;
+    margin: 0 3rem;
+    color: #585a5e;
+}
+
+footer a {
+    color: #585a5e;
+    text-decoration: none;
+    margin: 1rem;
 }

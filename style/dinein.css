@@ -1,0 +1,10 @@
+h2 {
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+    color: #139c93;
+}
+
+section img {
+    max-width: 100%;
+    /* display: none; */
+}
