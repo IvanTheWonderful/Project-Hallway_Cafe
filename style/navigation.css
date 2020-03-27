@@ -1,4 +1,11 @@
+
 @import '../style/fonts.css';
+
+/* This active-page id is given to the corresponding <a> in <nav> in each HTML file.
+The purpose of this is to create an "active" style for the links */
+#active-page {
+    color: burlywood;
+}
 
 nav {
     position: fixed;
