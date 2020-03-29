@@ -4,32 +4,115 @@ body {
 
 h2 {
     text-transform: uppercase;
-    font-family: 'Montserrat-Bold';
+    font-family: "Montserrat-Bold";
 }
 
 p {
-    font-family: 'Lato-Regular';
+    font-family: "Lato-Regular";
 }
 
 img {
     max-width: 100%;
 }
 
+.desktop-display {
+    display: none;
+}
+
+.mobile-display {
+    background: ffffff;
+    width: 375px;
+    height: 54px;
+    padding-left: 35px;
+    width: 600px;
+}
+
 .hallway-contact {
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
+    line-height: 4rem;
 }
-.contact-form {
-    text-align: center;
+
+.hallway-contact img {
+    width: 30px;
+}
+
+.hallway-contact a {
+    text-decoration: none;
+    background: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 15px;
+}
+
+.hallway-contact h2 {
+    font-size: 1.2rem;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
+    margin-top: -30px;
 }
 
 .hours-of-operation {
     display: flex;
+}
+
+.hours-of-operation p {
+    padding-left: 30px;
+}
+
+.location {
+    padding-left: 40px;
+}
+
+.find-us {
+    display: flex;
+    justify-content: space-around;
+}
+
+iframe {
+    margin-top: 30px;
+}
+
+.location h2 {
+    font-size: 0.9rem;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+.contact-form h2 {
+    text-align: left;
+    margin-top: 80px;
+    font-size: 1.1rem;
+    padding-left: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    text-align: left;
+}
+
+form input {
+    background: #ffffff;
+    border: 3px solid #ffd16b;
+    font-family: Lato-Heavy;
+    font-size: 11px;
+    color: #9b9c9e;
+    letter-spacing: 0.66px;
+    height: 30px;
 }
 
 footer {
@@ -44,28 +127,22 @@ footer a {
     margin: 1rem;
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width: 800px) {
     .container {
         display: grid;
-        grid-template-areas: "contact hours form"
-        "map map form"
-        "footer footer footer";
+        grid-template-areas: "contact hours form" "map map form" "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr .5fr;
+        grid-template-rows: 1fr 1fr 0.5fr;
     }
-    
     .contact-info {
         grid-area: contact;
     }
-    
     .hours-of-operation {
         grid-area: hours;
     }
-    
     .location {
         grid-area: map;
     }
-    
     .contact-form {
         grid-area: form;
     }
