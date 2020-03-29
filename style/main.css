@@ -46,6 +46,10 @@ body {
     height: 2rem;
     width: max-content;
 }
+
+button:hover {
+    cursor: pointer;
+}
 /* End: homepage */
 
 /* Start: footer */
