@@ -47,7 +47,7 @@ function toggleButtonAndMenu() {
     toggleMenu();
 }
 
-// Catering Slideshow Carousel (automatic)
+// Slideshow Carousel (automatic)
 
 let slideCount = 0
 showSlides()

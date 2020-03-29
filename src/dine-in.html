@@ -13,52 +13,41 @@
   <script src="../script/main.js" defer></script>
 
 <body>
-    <nav>
-        <a href="../index.html"></a><img src="../img//Icons/Mobile Icons/mobile-logo.png" alt="" class="mobile-display" />
-        <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
-        <div class="nav-desktop">
-            <a href="../src/about-us.html">ABOUT US</a>
-            <a href="../src/dine-in.html">DINE IN</a>
-            <a href="../src/catering.html">CATERING</a>
-            <a href="../index.html"><img class="desktop-display" src="../img/Icons/Desktop Icons/logo.png" alt="The logo of Hallway Cafe." /></a>
-            <a href="../src/contact.html">CONTACT</a>
-            <a href="../src/blog.html">BLOG</a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-        </div>
-        <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
-            <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
-            <button class="nav-mobile-button">
-          <div id="nav-mobile-button-div1"></div>
-          <div id="nav-mobile-button-div2"></div>
-          <div id="nav-mobile-button-div3"></div>
-          <div id="nav-mobile-button-div4"></div>
+  <nav>
+    <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
+    <div class="nav-desktop">
+        <a href="./about-us.html">ABOUT US</a>
+        <a href="./dine-in.html">DINE IN</a>
+        <a class="active-page" href="./catering.html">CATERING</a>
+        <a href="../index.html"><img src="../img/Icons/Desktop Icons/logo.png" alt="The logo of Hallway Cafe." /></a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
+    <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
+        <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
+        <button class="nav-mobile-button">
+            <div id="nav-mobile-button-div1"></div>
+            <div id="nav-mobile-button-div2"></div>
+            <div id="nav-mobile-button-div3"></div>
+            <div id="nav-mobile-button-div4"></div>
         </button>
-            <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
-                <li>
-                    <a href="../src/about-us.html">ABOUT US</a>
-                </li>
-                <li>
-                    <a href="../src/dine-in.html">DINE IN</a>
-                </li>
-                <li>
-                    <a href="../src/catering.html">CATERING</a>
-                </li>
-                <li>
-                    <a href="../src/contact.html">CONTACT</a>
-                </li>
-                <li>
-                    <a href="../src/blog.html">BLOG</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
+            <li><a href="./about-us.html">ABOUT US</a></li>
+            <li><a href="./dine-in.html">DINE IN</a></li>
+            <li><a class="active-page" href="./catering.html">CATERING</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+        </ul>
+    </div>
+</nav>
 
     <section class="feature-food-carousel">
-        <article class="feature-1">
-            <img src="../img/Dine-in/caprese-sandwich.png" alt="A delicious sandwich" class="feature-item-1" />
-            <span class="feature-description-1">
+      <article class="feature-1">
+        <img src="../img/Dine-in/caprese-sandwich.png" alt="A delicious sandwich" class="feature-item-1" />
+        <span class="feature-description-1">
           <h2>Featured Sandwich</h2>
           <h3>Classic Deli Club with Sweet & Spicy Mayo</h3>
           <hr>
@@ -67,13 +56,11 @@
             & deli style turkey on a choice of white or brown bread
           </p>
         </span>
-        </article>
-
-        <article class="feature-2">
-            <img src="../img/Dine-in/cheese-pizza.png" alt="A tasty pizza" class="feature-item-2" />
-            <span class="feature-description-2">
+      </article>
+      <article class="feature-2">
+        <img src="../img/Dine-in/cheese-pizza.png" alt="A tasty pizza" class="feature-item-2" />
+        <span class="feature-description-2">
           <h2>Featured Pizza</h2>
-
           <h3>Philly Cheese Steak Pizza</h3>
           <hr />
           <p>
@@ -82,11 +69,10 @@
             inside round of beef
           </p>
         </span>
-        </article>
-
-        <article class="feature-3">
-            <img src="../img/Dine-in/tomato-bisque.png" alt="A lovely soup" class="feature-item-3" />
-            <span class="feature-description-3">
+      </article>
+      <article class="feature-3">
+        <img src="../img/Dine-in/tomato-bisque.png" alt="A lovely soup" class="feature-item-3" />
+        <span class="feature-description-3">
           <h2>Featured Soup</h2>
           <h3>Ginger Chicken Vegetable</h3>
           <hr />
@@ -96,7 +82,7 @@
             clear those plugged sinuses
           </p>
         </span>
-        </article>
+      </article>
     </section>
     <section class="menu">
         <article class="menu-description">
