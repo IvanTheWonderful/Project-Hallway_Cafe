@@ -1,12 +1,6 @@
 
 @import '../style/fonts.css';
 
-/* This active-page id is given to the corresponding <a> in <nav> in each HTML file.
-The purpose of this is to create an "active" style for the links */
-#active-page {
-    color: burlywood;
-}
-
 nav {
     position: fixed;
     display: flex;
@@ -203,4 +197,10 @@ nav {
     .nav-desktop a:not(:nth-of-type(4)), .nav-desktop .fa {
         display: initial;
     }
+}
+
+/* This active-page class is given to the corresponding <a> in <nav> in each HTML file.
+The purpose of this is to create an "active" style for the links */
+nav .nav-desktop .active-page, nav .nav-mobile .active-page {
+    color: burlywood;
 }
