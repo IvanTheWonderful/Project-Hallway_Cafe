@@ -148,14 +148,17 @@ hr {
     .nonna-nightmare {
         grid-area: nonna;
     }
-    footer {
-        text-align: center;
-        margin: 0 3rem;
-        color: #585a5e;
-    }
-    footer a {
-        color: #585a5e;
-        text-decoration: none;
-        margin: 1rem;
-    }
+
+}
+
+footer {
+    text-align: center;
+    margin: 0 3rem;
+    color: #585a5e;
+}
+
+footer a {
+    color: #585a5e;
+    text-decoration: none;
+    margin: 1rem;
 }
