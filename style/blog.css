@@ -92,10 +92,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 
 .blog-subscribe-email button:hover {
-    animation: changeBackground 0.2s ease;
+    animation: changeBackground 0.2s ease forwards;
+}
+
+.blog-subscribe-email button:hover div:first-of-type,
+.blog-subscribe-email button:hover div:last-of-type {
+    animation: changeArrow 0.2s ease forwards;
 }
 
 .blog-subscribe-email button div {
@@ -124,7 +130,7 @@
 }
 @keyframes changeArrow {
     0% {
-
+        background: inherit;
     }
     100% {
         background: white;

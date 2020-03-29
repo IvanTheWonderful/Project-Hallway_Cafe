@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../style/navigation.css" />
     <link rel="stylesheet" href="../style/blog.css" />
+    <link rel="stylesheet" href="../style/footer.css">
     <script src="../script/main.js" defer></script>
 </head>
 
@@ -166,9 +167,9 @@
     </section>
     <section class="blog-subscribe">
         <label for="blog-subscribe-email-input">subscribe</label>
-        <form class="blog-subscribe-email">
+        <form class="blog-subscribe-email" id="blog-subscribe-email">
             <input type="text" id="blog-subscribe-email-input" placeholder="Email Address">
-            <button>
+            <button type="submit" form="blog-subscribe-email" value="submit">
                 <!-- The following 2 divs are to create a ">" shape button. -->
                 <div></div>
                 <div></div>
