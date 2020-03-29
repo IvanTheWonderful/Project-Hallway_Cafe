@@ -46,3 +46,20 @@ function toggleButtonAndMenu() {
     toggleButton();
     toggleMenu();
 }
+
+// Catering Slideshow Carousel (automatic)
+
+let slideCount = 0
+showSlides()
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlide")
+    for (i=0; i<slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideCount++;
+    if(slideCount > slides.length){slideCount = 1}
+    slides[slideCount-1].style.display = "initial";
+    setTimeout (showSlides, 5000)
+}
