@@ -19,9 +19,9 @@
         <div class="nav-desktop">
             <a href="./about-us.html">ABOUT US</a>
             <a href="./dine-in.html">DINE IN</a>
-            <a href="./catering.html">CATERING</a>
+            <a class="active-page" href="./catering.html">CATERING</a>
             <a href="../index.html"><img src="../img/Icons/Desktop Icons/logo.png" alt="The logo of Hallway Cafe." /></a>
-            <a class="active-page" href="./contact.html">CONTACT</a>
+            <a href="./contact.html">CONTACT</a>
             <a href="./blog.html">BLOG</a>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
@@ -38,8 +38,8 @@
             <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
                 <li><a href="./about-us.html">ABOUT US</a></li>
                 <li><a href="./dine-in.html">DINE IN</a></li>
-                <li><a href="./catering.html">CATERING</a></li>
-                <li><a class="active-page" href="./contact.html">CONTACT</a></li>
+                <li><a class="active-page" href="./catering.html">CATERING</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
                 <li><a href="./blog.html">BLOG</a></li>
             </ul>
         </div>
@@ -50,20 +50,23 @@
             <h2 class="desktop-display">
                 the hallway caf&egrave;
             </h2>
-            <span><img src="../img/icons/Desktop Icons/phone.png"> 780-413-8060
+            <span>
+                <img src="../img/icons/Desktop Icons/phone.png"> <a href="tel:+1-780-413-8060">
+                    780-413-8060
+                </a>
                 </span>
             <span>
-                    <img src="../img/Icons/Desktop Icons/Email.png" alt="Email">
-                    <a href="mailto:macbean@e4calberta.org">amacbean@e4calberta.org</a>
-                </span>
+                <img src="../img/Icons/Desktop Icons/Email.png" alt="Email">
+                <a href="mailto:macbean@e4calberta.org">amacbean@e4calberta.org</a>
+            </span>
             <span>
-                    <img src="../img/Icons/Mobile Icons/Catering.png" alt="">
-                    <a href="mailto:catering@hallway.cafe">catering@hallway.cafe</a>
-                </span>
+                <img src="../img/Icons/Mobile Icons/Catering.png" alt="">
+                <a href="mailto:catering@hallway.cafe">catering@hallway.cafe</a>
+            </span>
             <span>
-                    <img src="../img/Icons/Desktop Icons/Info.png" alt="">
-                    <a href="mailto:info@hallway.cafe">info@hallway.cafe</a>
-                </span>
+                <img src="../img/Icons/Desktop Icons/Info.png" alt="">
+                <a href="mailto:info@hallway.cafe">info@hallway.cafe</a>
+            </span>
         </div>
         <h2>hours</h2>
         <div class="hours-of-operation">
@@ -72,7 +75,6 @@
         </div>
     </section>
     <section class="location">
-
         <h2>find us</h2>
         <div class="find-us">
             <img src="../img/Icons/Desktop Icons/location.png" alt="">
@@ -83,14 +85,11 @@
     </section>
 
     <aside class="contact-form">
-
         <img class="desktop-display" src="../img/Icons/Desktop Icons/logo.png" alt="The logo of Hallway Cafe." />
-        <h2 class="mobile-display">The Hallway Caf&egrave;</h2>
-        <form>
-
+        <h2>The Hallway Caf&egrave;</h2>
+        <form action="mailto:info@hallway.cafe" method="POST" enctype="multipart/form-data" name="generalInfoForm">
             <label for="name">Name</label><br>
             <input type="text" id="name" name="name"><br>
-
             <label for="email">Email Address</Address><br></label> <input type="email" id="email" name="email"></br>
 
             <label for="subject">Subject</label><br>
@@ -99,9 +98,9 @@
             <label for="message">Message</label><br>
 
             <textarea id="message" rows="10" cols="20"></textarea>
-
-
-            <input type="submit" id="submit" value="Send Message">
+            <button class="infoButton">
+                send message
+            </button>
 
         </form>
 
