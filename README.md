@@ -8,8 +8,8 @@ This is our final project at Red Academy, which is done with a real client. The 
   4. copy the given URL
   5. open folder "src"
   6. open "blog.html"
-  7. find <div class="blog-posts"> (hint: you can use ctrl + F to find it)
-  8. move your cursor to the right side of <div class="blog-posts">
+  7. find "<div class="blog-posts">" (hint: you can use ctrl + F to find it)
+  8. move your cursor to the right side of "<div class="blog-posts">"
   9. press enter
   10. paste the URL here
   11. save this file
