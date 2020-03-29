@@ -1,3 +1,4 @@
+@import "./footer.css";
 body {
     margin-top: 5em;
 }
@@ -67,8 +68,15 @@ hr {
     text-decoration: none;
 }
 
-.customer-review-carousel {
-    /*text-align: center;*/
+.menu-download {
+    background: #139c93;
+    border: 3px solid #139c93;
+    color: FFFFFF;
+    font-family: Montserrat-Bold;
+    letter-spacing: 3.11px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .quote {
@@ -185,7 +193,6 @@ hr {
     .nonna-nightmare {
         grid-area: nonna;
     }
-
 }
 
 footer {
