@@ -18,6 +18,10 @@ img {
     /* display: none; */
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 hr {
     width: 33%;
     border: 1px solid #979797;
@@ -27,17 +31,44 @@ hr {
     display: none;
 }
 
+.mobile-display {
+    background: ffffff;
+    width: 375px;
+    height: 54px;
+    padding-left: 35px;
+    width: 600px;
+}
+
 .feature-food-carousel article {
     background: #ffd16b;
     text-align: center;
+    padding: 0 25px 0px 25px;
 }
 
 .menu {
     text-align: center;
+    margin-top: 40px;
+    text-align: left;
+    padding: 0 50px 0 50px;
+}
+
+.menu h2 {
+    text-align: center;
+}
+
+.menu img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu a {
+    text-decoration: none;
 }
 
 .customer-review-carousel {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .quote {
@@ -104,6 +135,12 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
+    .mobile-display {
+        display: none;
+    }
+    .desktop-display {
+        display: block;
+    }
     .dinein-photos {
         display: grid;
         grid-template-areas: "brussel  caesar parfait" "smoked turkey hawaiian" "cappucino pancetta tartar" "soup buckwheat nonna";
