@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../style/navigation.css">
+    <link rel="stylesheet" href="../style/catering.css">
     <script src="../script/main.js" defer></script>
 </head>
 
@@ -14,15 +16,15 @@
     <nav>
         <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
         <div class="nav-desktop">
-            <a href="./about-us.html" target="_blank" rel="noopener noreferrer">ABOUT US</a>
-            <a href="./dine-in.html" target="_blank" rel="noopener noreferrer">DINE IN</a>
-            <a id="active-page" href="./catering.html" target="_blank" rel="noopener noreferrer">CATERING</a>
-            <a href="../index.html" target="_blank" rel="noopener noreferrer"><img src="../img/Icons/Desktop Icons/v-logo.png" alt="The logo of Hallway Cafe." /></a>
-            <a href="./contact.html" target="_blank" rel="noopener noreferrer">CONTACT</a>
-            <a href="./blog.html" target="_blank" rel="noopener noreferrer">BLOG</a>
-            <a href="#" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" class="fa fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+            <a href="./about-us.html">ABOUT US</a>
+            <a href="./dine-in.html">DINE IN</a>
+            <a id="active-page" href="./catering.html">CATERING</a>
+            <a href="../index.html"><img src="../img/Icons/Desktop Icons/logo.png" alt="The logo of Hallway Cafe." /></a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./blog.html">BLOG</a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
         </div>
         <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
             <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
@@ -33,13 +35,69 @@
                 <div id="nav-mobile-button-div4"></div>
             </button>
             <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
-                <li><a href="./about-us.html" target="_blank" rel="noopener noreferrer">ABOUT US</a></li>
-                <li><a href="./dine-in.html" target="_blank" rel="noopener noreferrer">DINE IN</a></li>
-                <li><a id="active-page" href="./catering.html" target="_blank" rel="noopener noreferrer">CATERING</a></li>
-                <li><a href="./contact.html" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
-                <li><a href="./blog.html" target="_blank" rel="noopener noreferrer">BLOG</a></li>
+                <li><a href="./about-us.html">ABOUT US</a></li>
+                <li><a href="./dine-in.html">DINE IN</a></li>
+                <li><a id="active-page" href="./catering.html">CATERING</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
             </ul>
         </div>
     </nav>
+    <section class="catering-hero">
+        <div class="hero-banner">
+            <img src="../img/Catering/biscuit-sandwich.jpg" alt="A sandwich made on a cheddar biscuit" class="hero-img">
+        </div>
+        <div class="hero-statement">
+            <article class="good-food">
+                <h2>good food</h2>
+                <p>Is the reason you choose a professional caterer for your meeting, function or event. The Hallway Cafe's enticing breakfast and lunch catering menu will impress, delight and inspire- with a focus on made-from scratch cooking and baking,
+                    featuring sustainably sourced ingredients and packaging.</p>
+            </article>
+            <span class="ampersand">&</span>
+            <article class="do-good">
+                <h2>do good</h2>
+                <p>By choosing The Hallway Cafe for your catering needs, you are supporting a one-of-a-kind program that provides valuable skills and work experience to Edmonton youth. Guided by Brian McBride, Director of Culinary and Holly O'Brien, Program
+                    Manager, this e4c program is getting kids in the kitchen and off the street.</p>
+            </article>
+        </div>
+    </section>
+    <section class="catering-menu">
+        <h2>catering menu <br/> - winter/spring 2020 -</h2>
+        <img src="../img/About Us/Illustration - About Us.svg" alt="" class="texture-illustration">
+        <div class="menu-cover-wrapper"><img src="../img/Catering/catering-menu.png" alt="Menu Cover" class="menu-cover"></div>
+        <a href="../img/Catering/Winter-Spring-2019.pdf" download><button class="download-catering-menu">click to download catering menu</button></a>
+    </section>
+    <section class="catering-contact">
+        <h2>contact us</h2>
+        <p>If you are looking for a location to hold your special event our cafe is available for rent for evenings & weekends for up to 65 guests. We are able to provide service staff for all in house and catered events, upon request, for an additional
+            fee. <br/><br/>For all catering inquiries please contact our catering coordinator. All messages will be returned in one business day</p>
+        <img src="../img/Icons/" alt="">
+        <span>
+            <img src="../img/Icons/Desktop Icons/Catering.png" alt="">catering@hallway.cafe
+        </span>
+        <span>
+            <img src="../img/Icons/Desktop Icons/phone.png" alt="">587-991-5440
+        </span>
+        <form>
+            <div class="hallway-message">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email</Address><br></label> <input type="email" id="email" name="email"></br>
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="10" cols="20"></textarea>
+                <br>
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>
+            The Hallway Caf&egrave; | 1 Sir Winston Churchill Square, Edmonton, AB, Canada | 780-413-8060 | amacbean@e4calberta.org
+        </p>
+        <a href="#" class="fa fa-twitter fa-2x"></a>
+        <a href="#" class="fa fa-instagram fa-2x"></a>
+        <a href="#" class="fa fa-facebook fa-2x"></a>
+    </footer>
 </body>
+
 </html>

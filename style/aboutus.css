@@ -1,97 +1,107 @@
 .img-bar {
-    display: grid;
-    grid-template-areas: "pizza veggie" "burger veggie";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-areas:
+    "pizza veggie"
+    "burger veggie";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .pizza-assembly {
-    grid-area: pizza;
+  grid-area: pizza;
 }
 
 .order-up {
-    grid-area: burger;
+  grid-area: burger;
 }
 
 .veggie-tray {
-    grid-area: veggie;
+  grid-area: veggie;
 }
 
 .front-door,
 .cross-illus {
-    display: none;
+  display: none;
 }
 
 .img-bar {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .img-bar img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .about-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .about-us div {
-    text-align: center;
+  text-align: center;
 }
 
 .about-us h1 {
-    margin-left: 10%;
-    color: #139c93;
-    font-size: 36px;
-    opacity: 0.4;
+  margin-left: 10%;
+  color: #139c93;
+  font-size: 36px;
+  opacity: 0.4;
 }
 
 .alumni {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-image: url("../img/About Us/dining-booths.jpg");
-    height: 30em;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-blend-mode: overlay;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/About Us/dining-booths.jpg");
+  height: 30em;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
 }
 
 .alumni img {
-    width: 5rem;
-    height: 5rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .carousel-quotes {
-    background: rgba(19, 156, 147, 0.6);
-    background-blend-mode: overlay;
-    text-align: center;
+  background: rgba(19, 156, 147, 0.6);
+  background-blend-mode: overlay;
+  text-align: center;
 }
 
 .education-support h2 {
-    color: #139c93;
+  color: #139c93;
 }
 
 .heart-cookies {
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.heart-cookies img {
-    max-width: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 input,
 textarea {
-    border: #ffd16b 2px solid;
-    width: 80%;
-    margin-bottom: 1.7em;
+  border: #ffd16b 2px solid;
+  width: 80%;
+  margin-bottom: 1.7em;
 }
 
 .hallway-message {
-    padding-left: 20%;
+  padding-left: 20%;
+}
+
+footer {
+  text-align: center;
+  margin: 0 3rem;
+  color: #585a5e;
+}
+
+footer a {
+  color: #585a5e;
+  text-decoration: none;
+  margin: 1rem;
 }

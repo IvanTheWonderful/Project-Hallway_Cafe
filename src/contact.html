@@ -4,26 +4,28 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hallway Caf&egrave;</title>
+    <title>The Hallway Caf&egrave;</title>
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../style/navigation.css">
+    <link rel="stylesheet" href="../style/contact.css">
     <script src="../script/main.js" defer></script>
 </head>
 
 <body>
     <nav>
+        <a href="../index.html"></a><img src="../img//Icons/Mobile Icons/mobile-logo.png" alt="" class="mobile-display">
         <!-- only one of "nav-desktop" and "nav-mobile" will show on user interface -->
         <div class="nav-desktop">
-            <a href="./about-us.html" target="_blank" rel="noopener noreferrer">ABOUT US</a>
-            <a href="./dine-in.html" target="_blank" rel="noopener noreferrer">DINE IN</a>
-            <a href="./catering.html" target="_blank" rel="noopener noreferrer">CATERING</a>
-            <a href="../index.html" target="_blank" rel="noopener noreferrer"><img src="../img/Icons/Desktop Icons/v-logo.png" alt="The logo of Hallway Cafe." /></a>
-            <a id="active-page" href="./contact.html" target="_blank" rel="noopener noreferrer">CONTACT</a>
-            <a href="./blog.html" target="_blank" rel="noopener noreferrer">BLOG</a>
-            <a href="#" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
-            <a href="#" class="fa fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+            <a href="./about-us.html">ABOUT US</a>
+            <a href="./dine-in.html">DINE IN</a>
+            <a href="./catering.html">CATERING</a>
+            <a href="../index.html"><img class="desktop-display" src="../img/Icons/Desktop Icons/logo.png" alt="The logo of Hallway Cafe." /></a>
+            <a id="active-page" id="active-page" href="./contact.html">CONTACT</a>
+            <a href="./blog.html">BLOG</a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
         </div>
         <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
             <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
@@ -34,89 +36,86 @@
                 <div id="nav-mobile-button-div4"></div>
             </button>
             <ul class="nav-mobile-list nav-mobile-list-hidden" id="nav-mobile-list">
-                <li><a href="./about-us.html" target="_blank" rel="noopener noreferrer">ABOUT US</a></li>
-                <li><a href="./dine-in.html" target="_blank" rel="noopener noreferrer">DINE IN</a></li>
-                <li><a href="./catering.html" target="_blank" rel="noopener noreferrer">CATERING</a></li>
-                <li><a id="active-page" href="./contact.html" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
-                <li><a href="./blog.html" target="_blank" rel="noopener noreferrer">BLOG</a></li>
+                <li><a href="./about-us.html">ABOUT US</a></li>
+                <li><a href="./dine-in.html">DINE IN</a></li>
+                <li><a href="./catering.html">CATERING</a></li>
+                <li><a id="active-page" id="active-page" href="./contact.html">CONTACT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <nav class="head-nav">
-            <a href="aboutus.html" target="_blank">ABOUT US</a>
-            <a href="dinein.html" Starget="_blank">DINE IN</a>
-            <a href="catering.html" target="_blank">CATERING</a>
-            <img src="./img/v-logo.png" alt="not found image" />
-            <a href="contact.html" target="_blank">CONTACT</a>
-            <a href="blog.html" target="_blank">BLOG</a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-        </nav>
 
-        <section class="hallway-contact">
-            <h2>
-                THE HALLWAY CAF&Egrave; <span class="hours"><b>HOURS</span>
+    <section class="hallway-contact">
+        <div class="contact-info">
+            <h2 class="desktop-display">
+                the hallway caf&egrave;
             </h2>
-            <p><img src="./img/phone.png"> 780-413-8060
-                <span class="time"><img src="./img/clock.png">  Time Logo 7:00am to 3:30pm</span>
-            </p>
-            <p class="time">Monday to Friday</p>
-            <img src="./img/Email.png" alt="Email">
-            <a href="mailto:macbean@e4calberta.org">macbean@e4calberta.org</a> <br>
-            <img src="./img/Catering.png" alt="">
-            <a href="mailto:catering@hallway.cafe">macbean@e4calberta.org</a>
-            <br>
+            <span><img src="../img/icons/Desktop Icons/phone.png"> 780-413-8060
+                </span>
+            <span>
+                    <img src="../img/Icons/Desktop Icons/Email.png" alt="Email">
+                    <a href="mailto:macbean@e4calberta.org">amacbean@e4calberta.org</a>
+                </span>
+            <span>
+                    <img src="../img/Icons/Mobile Icons/Catering.png" alt="">
+                    <a href="mailto:catering@hallway.cafe">catering@hallway.cafe</a>
+                </span>
+            <span>
+                    <img src="../img/Icons/Desktop Icons/Info.png" alt="">
+                    <a href="mailto:info@hallway.cafe">info@hallway.cafe</a>
+                </span>
+        </div>
+        <h2>hours</h2>
+        <div class="hours-of-operation">
+            <img src="../img/Icons/Desktop Icons/time.svg" alt="">
+            <p> 7am to 3:30pm Monday-Friday</p>
+        </div>
+    </section>
+    <section class="location">
 
-            <img src="./img/Info.png" alt="">
-            <a href="mailto:info@hallway.cafe">macbean@e4calberta.org</a>
-            <br>
-
-
-            <h2>FIND US</h2>
+        <h2>find us</h2>
+        <div class="find-us">
+            <img src="../img/Icons/Desktop Icons/location.png" alt="">
             <p>1 Sir Winston Churchill Square, Edmonton, AB</p>
-        </section>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.7032174893197!2d-113.4927204840787!3d53.54521318002121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02379b746ec93%3A0xc2ad7469f536fa6e!2sThe%20Hallway%20Cafe!5e0!3m2!1sen!2sca!4v1584832160454!5m2!1sen!2sca"
+            width="100%" height="150" frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
 
-        <aside class="contact-form">
-            <img src="https://dummyimage.com/125/00ff48/ff0000.png&text=Image+Found" alt="not found image" />
-            <form>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name"><br>
+    <aside class="contact-form">
 
-                <label for="email">Email Address</Address><br></label> <input type="email" id="email" name="email"></br>
+        <img class="desktop-display" src="../img/Icons/Desktop Icons/logo.png" alt="The logo of Hallway Cafe." />
+        <h2 class="mobile-display">The Hallway Caf&egrave;</h2>
+        <form>
 
-                <label for="subject">Subject</label><br>
-                <input type="text" id="subject" name="subject"><br>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br>
 
-                <label for="comments">Comments</label><br>
+            <label for="email">Email Address</Address><br></label> <input type="email" id="email" name="email"></br>
 
-                <textarea id="comments" rows="10" cols="20"></textarea>
-                <br>
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject" name="subject"><br>
 
-                <input type="submit" value="Send Message"><br>
+            <label for="message">Message</label><br>
 
-            </form>
+            <textarea id="message" rows="10" cols="20"></textarea>
+            <br>
+
+            <input type="submit" value="Send Message"><br>
+
+        </form>
 
 
-        </aside>
+    </aside>
+    <footer>
+        <p>
+            The Hallway Caf&egrave; |1 Sir Winston Churchill Square, Edmonton, AB | Phone: 780-413-8060 | amacbean@e4calberta.org
+        </p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </footer>
 
-        <section class="google-map">
-            <!--<div id="googleMap" style="width:100%;height:400px;"></div>-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.7032174893197!2d-113.4927204840787!3d53.54521318002121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02379b746ec93%3A0xc2ad7469f536fa6e!2sThe%20Hallway%20Cafe!5e0!3m2!1sen!2sca!4v1584832160454!5m2!1sen!2sca"
-                width="100%" height="300" frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
-
-        <footer>
-            <p>
-                The Hallway Caf&egrave; | 1 Sir Winston Churchill Square, Edmonton, AB | Phone: 780-413-8060 | amacbean@e4calberta.org
-            </p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-        </footer>
-    </div>
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw4gWoGAsV3OUimXXnE6hPEqIhBy8eGnw&callback=myMap"></script>-->
 </body>
 
 </html>
