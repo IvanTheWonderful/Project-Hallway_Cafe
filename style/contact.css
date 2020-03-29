@@ -53,6 +53,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: -30px;
+    font-size: 1.3rem;
 }
 
 .hours-of-operation {
@@ -103,22 +104,36 @@ form {
     flex-direction: column;
     padding-left: 40px;
     text-align: left;
+    font-family: Lato-Heavy;
+    font-size: 15px;
+    letter-spacing: 0.66px;
+    color: #9b9c9e;
 }
 
-form input {
-    background: #ffffff;
+#name,
+#email,
+#subject {
     border: 3px solid #ffd16b;
     font-family: Lato-Heavy;
-    font-size: 11px;
-    color: #9b9c9e;
-    letter-spacing: 0.66px;
     height: 30px;
+}
+
+#message {
+    border: 3px solid #ffd16b;
+}
+
+#submit {
+    margin-top: 20px;
 }
 
 footer {
     text-align: center;
     margin: 0 3rem;
     color: #585a5e;
+    background: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 10px;
+    letter-spacing: 0.6px;
 }
 
 footer a {
@@ -127,7 +142,17 @@ footer a {
     margin: 1rem;
 }
 
+.fa {
+    font-size: 20px;
+}
+
 @media only screen and (min-width: 800px) {
+    .mobile-display {
+        display: none;
+    }
+    .desktop-display {
+        display: block;
+    }
     .container {
         display: grid;
         grid-template-areas: "contact hours form" "map map form" "footer footer footer";
