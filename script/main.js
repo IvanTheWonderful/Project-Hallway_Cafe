@@ -51,6 +51,7 @@ function thanksForSubscribe() {
     let email=document.getElementById("blog-subscribe-email-input").value;
     alert(`Thanks for subscribe! ${email}`)
 }
+// Slideshow Carousel (automatic)
 
 // Catering Slideshow Carousel (automatic)
 let slideCount = 0
@@ -64,6 +65,6 @@ function showSlides() {
     }
     slideCount++;
     if(slideCount > slides.length){slideCount = 1}
-    slides[slideCount-1].style.display = "initial";
+    slides[slideCount-1].style.display = "block";
     setTimeout (showSlides, 5000)
 }

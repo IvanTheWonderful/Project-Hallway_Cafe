@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../style/navigation.css">
     <link rel="stylesheet" href="../style/catering.css">
-    <link rel="stylesheet" href="../style/footer.css">
     <script src="../script/main.js" defer></script>
 </head>
 
@@ -79,12 +78,12 @@
             fee. <br/><br/>For all catering inquiries please contact our catering coordinator. All messages will be returned in one business day</p>
         <img src="../img/Icons/" alt="">
         <span>
-            <img src="../img/Icons/Desktop Icons/Catering.png" alt="">catering@hallway.cafe
+            <img src="../img/Icons/Desktop Icons/Catering.png" alt=""><p>catering@hallway.cafe</p>
         </span>
         <span>
-            <img src="../img/Icons/Desktop Icons/phone.png" alt="">587-991-5440
+            <img src="../img/Icons/Desktop Icons/phone.png" alt=""><p>587-991-5440</p>
         </span>
-        <form>
+        <form action="mailto:catering@hallway.cafe" method="POST" enctype="multipart/form-data" name="cateringForm">
             <div class="hallway-message">
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name"><br>
@@ -92,7 +91,9 @@
                 <label for="message">Message</label><br>
                 <textarea id="message" rows="10" cols="20"></textarea>
                 <br>
-                <input type="submit" value="Send Message">
+                <button>
+                    send message
+                </button>
             </div>
         </form>
     </section>

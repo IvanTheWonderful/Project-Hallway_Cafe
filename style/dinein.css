@@ -1,3 +1,4 @@
+@import "./footer.css";
 body {
     margin-top: 5em;
 }
@@ -15,7 +16,11 @@ h3 {
 
 img {
     max-width: 100%;
-    /* display: none; */
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Lato-Regular';
 }
 
 hr {
@@ -27,22 +32,76 @@ hr {
     display: none;
 }
 
-.feature-food-carousel article {
+.mobile-display {
+    background: #ffffff;
+    width: 375px;
+    height: 54px;
+    padding-left: 35px;
+    width: 600px;
+}
+
+.feature-food-carousel {
+    margin-top: 7em;
     background: #ffd16b;
+    padding-bottom: 5%;
+}
+
+.feature-food-carousel article {
     text-align: center;
 }
 
 .menu {
     text-align: center;
+    margin-top: 40px;
+    text-align: left;
+    padding: 0 10%;
 }
 
-.customer-review-carousel {
+.menu h2 {
     text-align: center;
 }
 
+.menu img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu-download {
+    background: #139c93;
+    border: 3px solid #139c93;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Bold';
+    font-size: 16px;
+    letter-spacing: 3.11px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 5% 10%;
+}
+
 .quote {
+    display: flex;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    margin: 2em 1em;
+}
+
+.reviewContent {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.authorName{
+    color: #139c93;
 }
 
 .dinein-photos {
@@ -104,6 +163,12 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
+    .mobile-display {
+        display: none;
+    }
+    .desktop-display {
+        display: block;
+    }
     .dinein-photos {
         display: grid;
         grid-template-areas: "brussel  caesar parfait" "smoked turkey hawaiian" "cappucino pancetta tartar" "soup buckwheat nonna";
@@ -148,7 +213,6 @@ hr {
     .nonna-nightmare {
         grid-area: nonna;
     }
-
 }
 
 footer {

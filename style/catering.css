@@ -1,8 +1,10 @@
-p {
+p, label{
     font-family: 'Lato-Regular';
+    font-size: 19px;
 }
 
 h2 {
+    font-size: 24px;
     text-transform: uppercase;
     color: #e4a388;
     font-family: 'Montserrat-Bold';
@@ -12,9 +14,18 @@ img {
     max-width: 100%;
 }
 
+button {
+    text-transform: uppercase;
+    color: #585A5E;;
+    font-size: 16px;
+    font-family: 'Lato-Bold';
+    letter-spacing: 3.36px;
+    width: 80%;
+}
+
 .hero-banner {
+    margin-top: 6em;
     max-width: 100%;
-    
 }
 
 .mySlide {
@@ -25,15 +36,37 @@ img {
     text-align: center;
 }
 
+.hero-statement h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.hero-statement article {
+    padding: 0 10%;
+    text-align: left;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
 .ampersand {
     font-size: 30px;
     color: #97c57a;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat-Semi-Bold';
 }
 
 .catering-menu {
     background-color: #97c57a;
     text-align: center;
+    padding: 1em;
+}
+
+.catering-menu button {
+    padding: 1em ;
+    border: 4px white solid;
+    margin: 1em 0;
+    background: #97c57a;
+    color: #f7f7f7;
+    font-family: 'Montserrat-Bold';
 }
 
 .catering-menu h2 {
@@ -49,15 +82,47 @@ img.texture-illustration {
     margin: 0 auto;
 }
 
-.catering-contact {
+.catering-contact{
+    margin-top: 2em;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
+.catering-contact p {
+    text-align: left;
+    padding: 0 10%;
+}
+
+.catering-contact span {
+    display: flex;
+    margin-bottom: 1em;
+    text-align: left;
+    padding:  0 10%;
+}
+
+form {
+    text-align: left;
+    padding: 0 10%;
+}
+
+form button {
+    margin: 0 10%;
+    border: 2px solid #979797 ;
+}
+
+input {
+    height: 2em;
+}
+
+input, textarea {
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #e4a388;
+}
+
 footer {
     text-align: center;
-    margin: 0 3rem;
     color: #585a5e;
 }
 
