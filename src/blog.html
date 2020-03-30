@@ -44,13 +44,7 @@
             </ul>
         </div>
     </nav>
-    <!-- Instruction on How to Add New Posts from Facebook -->
-    <!-- 1. make a PUBLIC post in facebook. Only public posts can be used here
-     2. click the 3 dot button at the top right corner of the post
-     3. select "Embed"
-     4. copy the given URL
-     5. paste the URL in the section below, ie. under <section class="blog"> -->
-    <section class="blog">
+    <section class="blog" id="pagetop">
         <div class="blog-hero">
             <img src="../img/Blog/wrap-and-soup.png" alt="">
             <h1>The Hallway Caf&egrave;</h1>
@@ -70,6 +64,12 @@
                 </g>
             </svg>
         </div>
+         <!-- Instruction on How to Add New Posts from Facebook -->
+    <!-- 1. make a PUBLIC post in facebook. Only public posts can be used here
+     2. click the 3 dot button at the top right corner of the post
+     3. select "Embed"
+     4. copy the given URL
+     5. paste the URL in the div below, ie. under <div class="blog-posts"> -->
         <div class="blog-posts">
             <iframe
                 src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fthehallwaycafe%2Fposts%2F2586697344921253%3A0&width=500"
@@ -168,13 +168,21 @@
     <section class="blog-subscribe">
         <label for="blog-subscribe-email-input">subscribe</label>
         <form class="blog-subscribe-email" id="blog-subscribe-email">
-            <input type="text" id="blog-subscribe-email-input" placeholder="Email Address">
-            <button type="submit" form="blog-subscribe-email" value="submit">
+            <input required type="text" id="blog-subscribe-email-input" placeholder="Email Address">
+            <button type="submit" form="blog-subscribe-email" onclick="thanksForSubscribe()" >
                 <!-- The following 2 divs are to create a ">" shape button. -->
                 <div></div>
                 <div></div>
             </button>
         </form>
+        <a href="#pagetop" class="button-backToTop">
+            <button >
+                <!-- The following 2 divs are to create an arrow shape -->
+                <div></div>
+                <div></div>
+                <span>Back to top</span>
+            </button>
+        </a>
     </section>
     <footer>
         <p>
