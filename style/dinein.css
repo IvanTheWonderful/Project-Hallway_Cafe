@@ -1,6 +1,6 @@
 @import "./footer.css";
 body {
-    margin-top: 5em;
+    margin-top: 7em;
 }
 
 h2 {
@@ -32,22 +32,28 @@ hr {
     display: none;
 }
 
-.mobile-display {
+/* .mobile-display {
     background: #ffffff;
     width: 375px;
     height: 54px;
     padding-left: 35px;
     width: 600px;
-}
+} */
 
 .feature-food-carousel {
-    margin-top: 7em;
     background: #ffd16b;
-    padding-bottom: 5%;
+    padding: 5% 0;
 }
 
-.feature-food-carousel article {
+
+.feature-food-carousel h2, h3 {
     text-align: center;
+    padding: 0 10%;
+}
+
+.feature-description p {
+    text-align: left;
+    padding: 0 10%;
 }
 
 .menu {

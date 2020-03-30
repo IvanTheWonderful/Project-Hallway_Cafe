@@ -66,5 +66,5 @@ function showSlides() {
     slideCount++;
     if(slideCount > slides.length){slideCount = 1}
     slides[slideCount-1].style.display = "block";
-    setTimeout (showSlides, 5000)
+    setTimeout (showSlides, 3500)
 }
