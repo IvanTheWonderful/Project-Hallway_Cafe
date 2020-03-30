@@ -19,7 +19,7 @@ p {
     "burger veggie";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-column-gap: .5em;
+  grid-gap: .5em;
 }
 
 .img-bar img {
@@ -28,14 +28,16 @@ p {
 
 .pizza-assembly {
   grid-area: pizza;
+  height: 100%;
 }
 
 .order-up {
   grid-area: burger;
+  height: 100%;
+  object-fit: cover;
 }
 
 .veggie-tray {
-  width: 91%;
   grid-area: veggie;
 }
 
@@ -67,7 +69,7 @@ p {
 }
 
 .about-us img {
-  width: 20%;
+  width: 25%;
 }
 
 .alumni {
@@ -149,4 +151,117 @@ form button {
   text-transform: uppercase;
   border: 2px solid #979797 ;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+
+  p {
+    font-size: 26px;
+  }
+
+  body {
+    padding: 0 10%;
+  }
+  
+  .img-bar {
+    display: grid;
+    grid-template-areas: 
+    "door door pizza veggie"
+    "door door burger veggie";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .front-door {
+    grid-area: door;
+    display: initial;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cross-illus {
+    display: initial;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .about-statements {
+    display: flex;
+  }
+
+  .about-us {
+    flex-direction: column-reverse;
+  }
+
+  .about-us h1 {
+    font-size: 60px;
+    align-self: flex-end;
+    margin-right: 2em;
+    color: #139c93;
+  }
+
+  .about-us div {
+    padding: 0 5%;
+  }
+
+  .about-us img {
+    width: 30%;
+  }
+
+  .alumni {
+    height: 50em;
+  }
+
+  .alumni-recognition {
+    align-items: center;
+    width: 65%;
+    margin: 5em 5em;
+  }
+
+  .alumni-recognition img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .carousel-quotes {
+    justify-content: center;
+  }
+
+  .carousel-quotes span {
+    max-width: 30%;
+  }
+
+  .education-support {
+    padding: 0;
+  }
+
+  .education-support h1 {
+    font-size: 55px;
+  }
+
+  .education-support h2 {
+    font-size: 30px;
+    font-family: 'Montserrat-Bold';
+  }
+
+  .program-categories {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .program-categories div {
+    max-width: 30%;
+  }
+
+  .program-contact-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heart-cookies {
+    width: 30%;
+
+  }
+
 }
