@@ -1,10 +1,23 @@
+@import './fonts.css';
+
+h1, h2, h3 {
+  font-family: 'Montserrat';
+}
+
+p {
+  font-family: 'Lato-Regular';
+}
+
+
 .img-bar {
+  margin-top: 7em;
   display: grid;
   grid-template-areas:
     "pizza veggie"
     "burger veggie";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
 }
 
 .pizza-assembly {
