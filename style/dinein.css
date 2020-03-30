@@ -46,8 +46,13 @@ hr {
     padding-bottom: 5%;
 }
 
-.feature-food-carousel article {
+.feature-food-carousel h2, h3 {
     text-align: center;
+}
+
+.feature-food-carousel article {
+    text-align: left;
+    padding: 0 10%;
 }
 
 .menu {
