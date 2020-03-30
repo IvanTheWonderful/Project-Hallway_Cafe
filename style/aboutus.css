@@ -1,15 +1,17 @@
 @import './fonts.css';
 
 h1, h2, h3 {
-  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-family: 'Montserrat-Bold';
+  font-size: 22px;
 }
 
 p {
   font-family: 'Lato-Regular';
 }
 
-
 .img-bar {
+  max-width: 100%;
   margin-top: 7em;
   display: grid;
   grid-template-areas:
@@ -17,7 +19,11 @@ p {
     "burger veggie";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 1em;
+  grid-column-gap: .5em;
+}
+
+.img-bar img {
+  max-width: 100%;
 }
 
 .pizza-assembly {
@@ -29,20 +35,13 @@ p {
 }
 
 .veggie-tray {
+  width: 91%;
   grid-area: veggie;
 }
 
 .front-door,
 .cross-illus {
   display: none;
-}
-
-.img-bar {
-  max-width: 100%;
-}
-
-.img-bar img {
-  max-width: 100%;
 }
 
 .about-us {
@@ -54,13 +53,21 @@ p {
 
 .about-us div {
   text-align: center;
+  padding: 0 10%;
+}
+
+.about-us p {
+  text-align: left;
 }
 
 .about-us h1 {
-  margin-left: 10%;
-  color: #139c93;
+  color: #97c57a;
   font-size: 36px;
-  opacity: 0.4;
+  opacity: 0.6;
+}
+
+.about-us img {
+  width: 20%;
 }
 
 .alumni {
@@ -76,15 +83,35 @@ p {
   background-blend-mode: overlay;
 }
 
-.alumni img {
+.alumni-recognition {
+  display: flex;
+  margin-top: 1em;
+  padding: 0 10%;
+}
+
+.alumni-recognition img {
   width: 5rem;
   height: 5rem;
+  margin-right: 10px;
 }
 
 .carousel-quotes {
+  display: flex;
+  justify-content: space-evenly;
   background: rgba(19, 156, 147, 0.6);
   background-blend-mode: overlay;
-  text-align: center;
+  margin-top: 2em;
+}
+
+.carousel-quotes span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-support {
+  text-align: left;
+  padding: 0 10%;
 }
 
 .education-support h2 {
@@ -96,25 +123,30 @@ p {
   object-fit: contain;
 }
 
+label {
+  font-family: 'Lato-Regular';
+}
+
 input,
 textarea {
+  font-family: 'Lato-Regular';
   border: #ffd16b 2px solid;
-  width: 80%;
+  width: 95%;
   margin-bottom: 1.7em;
 }
 
-.hallway-message {
-  padding-left: 20%;
+input {
+  height: 2em;
 }
 
-footer {
-  text-align: center;
-  margin: 0 3rem;
-  color: #585a5e;
-}
-
-footer a {
-  color: #585a5e;
-  text-decoration: none;
-  margin: 1rem;
+form button {
+  margin-left: 7%;
+  color: #585A5E;;
+  font-size: 18px;
+  font-family: 'Lato-Bold';
+  letter-spacing: 3.36px;
+  width: 80%;
+  text-transform: uppercase;
+  border: 2px solid #979797 ;
+  cursor: pointer;
 }
