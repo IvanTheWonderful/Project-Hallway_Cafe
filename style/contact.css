@@ -177,9 +177,7 @@ footer a {
 }
 
 @media only screen and (min-width: 600px) {
-    .wrapper {
-        display: grid;
-    }
+
     .mobile-display {
         display: none;
     }
@@ -188,13 +186,16 @@ footer a {
     }
     .container {
         display: grid;
-        grid-template-areas: "contact hours . form" "map map . form" "footer footer footer footer";
+        grid-template-areas: 
+        "contact hours . form" 
+        "map map . form" 
+        "footer footer footer footer";
         grid-template-columns: 1fr 1fr .5fr 2fr;
         grid-template-rows: 1fr 1fr 0.5fr;
     }
     .hallway-contact {
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: row; */
         border: orange 5px solid;
     }
     .hallway-contact h2 {

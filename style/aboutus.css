@@ -158,10 +158,6 @@ form button {
   p {
     font-size: 26px;
   }
-
-  body {
-    padding: 0 10%;
-  }
   
   .img-bar {
     display: grid;
@@ -170,6 +166,7 @@ form button {
     "door door burger veggie";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 0 10%;
   }
   
   .front-door {
@@ -182,8 +179,9 @@ form button {
   
   .cross-illus {
     display: initial;
-    width: 100%;
+    width: 90%;
     margin-bottom: 2em;
+    padding: 0 5%;
   }
 
   .about-statements {
@@ -211,6 +209,8 @@ form button {
 
   .alumni {
     height: 50em;
+    background-size: 90% 90%;
+    background-position: center;
   }
 
   .alumni-recognition {
@@ -233,7 +233,7 @@ form button {
   }
 
   .education-support {
-    padding: 0;
+    padding: 0 10%;
   }
 
   .education-support h1 {
@@ -251,12 +251,12 @@ form button {
   }
 
   .program-categories div {
-    max-width: 30%;
+    max-width: 25%;
   }
 
   .program-contact-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .heart-cookies {
