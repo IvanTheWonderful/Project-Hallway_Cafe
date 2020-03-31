@@ -153,7 +153,7 @@ form button {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 
   p {
     font-size: 26px;
@@ -261,7 +261,7 @@ form button {
 
   .heart-cookies {
     width: 30%;
-
+    margin-right: 20px;
   }
 
 }
