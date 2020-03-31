@@ -66,11 +66,16 @@
         
         .hours-of-operation {
             display: flex;
-            align-items: center;
+            /*align-items: flex-start;*/
+            flex-direction: column
+        }
+        
+        .hours-of-operation div {
+            display: flex;
         }
         
         .hours-of-operation img {
-            margin-right: 10px;
+            padding: 25px;
         }
         
         .location {
@@ -94,7 +99,7 @@
         
         iframe {
             margin-top: 2em;
-            width: 260px;
+            width: 70vw;
             height: 150px;
         }
         
@@ -167,28 +172,14 @@
             font-size: 20px;
         }
         
-        @media only screen and (min-width: 400px) {
-            iframe {
-                width: 360px;
-                height: 300px;
-            }
-        }
-        
-        @media only screen and (min-width: 600px) {
-            iframe {
-                width: 350px;
-                height: 300px;
-            }
-        }
-        
         @media only screen and (min-width: 800px) {
             .wrapper {
                 display: grid;
             }
-            iframe {
+            /*iframe {
                 width: 550px;
                 height: 500px;
-            }
+            }*/
             .mobile-display {
                 display: none;
             }
@@ -197,8 +188,8 @@
             }
             .container {
                 display: grid;
-                grid-template-areas: "contact hours form" "map map form" "footer footer footer";
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "contact hours . form" "map map . form" "footer footer footer footer";
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr 0.5fr;
             }
             .hallway-contact {

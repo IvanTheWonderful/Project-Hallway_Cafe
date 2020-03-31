@@ -240,7 +240,6 @@ svg {
     .quote {
         max-width: 70%;
     }
-
     .dinein-photos {
         display: grid;
         grid-template-areas: "brussel  caesar parfait" "smoked turkey hawaiian" "cappucino pancetta tartar" "soup buckwheat nonna";
@@ -249,7 +248,7 @@ svg {
         grid-row-gap: 10px;
         grid-column-gap: 10px;
     }
- 
+
     .brussel-sprouts {
         grid-area: brussel;
     }
