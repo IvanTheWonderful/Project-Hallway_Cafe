@@ -169,12 +169,19 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
+
+    .feature-food-carousel img{
+        max-width: 30%;
+    }
+    
     .mobile-display {
         display: none;
     }
+
     .desktop-display {
         display: block;
     }
+
     .dinein-photos {
         display: grid;
         grid-template-areas: "brussel  caesar parfait" "smoked turkey hawaiian" "cappucino pancetta tartar" "soup buckwheat nonna";
@@ -183,12 +190,15 @@ hr {
         grid-row-gap: 10px;
         grid-column-gap: 10px;
     }
+
     .brussel-sprouts {
         grid-area: brussel;
     }
+
     .caesar {
         grid-area: caesar;
     }
+
     .parfait {
         grid-area: parfait;
     }
