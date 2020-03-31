@@ -1,220 +1,246 @@
-body {
-    margin-top: 10em;
-}
-
-h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: "Montserrat-Bold";
-}
-
-p {
-    font-family: "Lato-Regular";
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #585A5E;
-}
-
-.desktop-display {
-    display: none;
-}
-
-.hallway-contact {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10%;
-    line-height: 3em;
-}
-
-.hallway-contact img {
-    width: 8%;
-    height: 8%;
-}
-
-.hallway-contact a {
-    text-decoration: none;
-    background: #ffffff;
-    font-family: 'Lato-Regular';
-    font-size: 15px;
-}
-
-.hallway-contact h2 {
-    font-size: 24px;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-}
-
-.contact-info img {
-    margin-right: 10px;
-}
-
-.contact-info span {
-    display: flex;
-    align-items: center;
-    font-family: 'Lato-Regular';
-}
-
-.hours-of-operation {
-    display: flex;
-    align-items: center;
-}
-
-.hours-of-operation img {
-    margin-right: 10px;
-}
-
-.location {
-    padding: 0 10%;
-}
-
-.location h2 {
-    font-size: 24px;
-    margin-bottom: 2em;
-}
-
-.find-us {
-    display: flex;
-}
-
-.find-us img {
-    width: 8%;
-    height: 8%;
-    margin-right: 10px;
-}
-
-iframe {
-    margin-top: 2em;
-    width: 260px;
-    height: 150px;
-}
-
-form label {
-    margin: 10px 0;
-}
-
-.contact-form h2 {
-    text-align: left;
-    padding: 10%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10%;
-    text-align: left;
-    font-family: 'Lato-Bold';
-    font-size: 16px;
-    letter-spacing: 0.66px;
-    color: #9b9c9e;
-}
-
-form button {
-    color: #585A5E;;
-    font-size: 18px;
-    font-family: 'Lato-Bold';
-    letter-spacing: 3.36px;
-    width: 80%;
-    text-transform: uppercase;
-    margin: 5% 10%;
-    border: 2px solid #979797 ;
-    cursor: pointer;
-}
-
-#name,
-#email,
-#subject {
-    border: 3px solid #ffd16b;
-    font-family: Lato-Heavy;
-    height: 30px;
-}
-
-#message {
-    border: 3px solid #ffd16b;
-}
-
-#submit {
-    margin-top: 20px;
-}
-
-footer {
-    text-align: center;
-    margin: 0 3rem;
-    color: #585a5e;
-    background: #ffffff;
-    font-family: Lato-Regular;
-    font-size: 10px;
-    letter-spacing: 0.6px;
-}
-
-footer a {
-    color: #585a5e;
-    text-decoration: none;
-    margin: 1rem;
-}
-
-.fa {
-    font-size: 20px;
-}
-
-@media only screen and (min-width: 400px) {
-    iframe {
-        width: 360px;
-        height: 300px;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    iframe {
-        width: 350px;
-        height: 300px;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    iframe {
-        width: 550px;
-        height: 500px;
-    }
-    
-    .mobile-display {
-        display: none;
-    }
-    .desktop-display {
-        display: block;
-    }
-    .container {
-        display: grid;
-        grid-template-areas: "contact hours form" "map map form" "footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0.5fr;
-    }
-    .contact-info {
-        grid-area: contact;
-    }
-    .hours-of-operation {
-        grid-area: hours;
-    }
-    .location {
-        grid-area: map;
-    }
-    .contact-form {
-        grid-area: form;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    iframe {
-        width: 750px;
-        height: 700px;
-    }
-}
+        body {
+            margin-top: 10em;
+        }
+        
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-family: "Montserrat-Bold";
+        }
+        
+        p {
+            font-family: "Lato-Regular";
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #585A5E;
+        }
+        
+        .desktop-display {
+            display: none;
+        }
+        
+        .hallway-contact {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10%;
+            line-height: 3em;
+        }
+        
+        .hallway-contact img {
+            width: 8%;
+            height: 8%;
+        }
+        
+        .hallway-contact a {
+            text-decoration: none;
+            background: #ffffff;
+            font-family: 'Lato-Regular';
+            font-size: 15px;
+        }
+        
+        .hallway-contact h2 {
+            font-size: 24px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+        }
+        
+        .contact-info img {
+            margin-right: 10px;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            font-family: 'Lato-Regular';
+        }
+        
+        .hours-of-operation {
+            display: flex;
+            align-items: center;
+        }
+        
+        .hours-of-operation img {
+            margin-right: 10px;
+        }
+        
+        .location {
+            padding: 0 10%;
+        }
+        
+        .location h2 {
+            font-size: 24px;
+            margin-bottom: 2em;
+        }
+        
+        .find-us {
+            display: flex;
+        }
+        
+        .find-us img {
+            width: 8%;
+            height: 8%;
+            margin-right: 10px;
+        }
+        
+        iframe {
+            margin-top: 2em;
+            width: 260px;
+            height: 150px;
+        }
+        
+        form label {
+            margin: 10px 0;
+        }
+        
+        .contact-form h2 {
+            text-align: left;
+            padding: 10%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10%;
+            text-align: left;
+            font-family: 'Lato-Bold';
+            font-size: 16px;
+            letter-spacing: 0.66px;
+            color: #9b9c9e;
+        }
+        
+        form button {
+            color: #585A5E;
+            ;
+            font-size: 18px;
+            font-family: 'Lato-Bold';
+            letter-spacing: 3.36px;
+            width: 80%;
+            text-transform: uppercase;
+            margin: 5% 10%;
+            border: 2px solid #979797;
+            cursor: pointer;
+        }
+        
+        #name,
+        #email,
+        #subject {
+            border: 3px solid #ffd16b;
+            font-family: Lato-Heavy;
+            height: 30px;
+        }
+        
+        #message {
+            border: 3px solid #ffd16b;
+        }
+        
+        #submit {
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin: 0 3rem;
+            color: #585a5e;
+            background: #ffffff;
+            font-family: Lato-Regular;
+            font-size: 10px;
+            letter-spacing: 0.6px;
+        }
+        
+        footer a {
+            color: #585a5e;
+            text-decoration: none;
+            margin: 1rem;
+        }
+        
+        .fa {
+            font-size: 20px;
+        }
+        
+        @media only screen and (min-width: 400px) {
+            iframe {
+                width: 360px;
+                height: 300px;
+            }
+        }
+        
+        @media only screen and (min-width: 600px) {
+            iframe {
+                width: 350px;
+                height: 300px;
+            }
+        }
+        
+        @media only screen and (min-width: 800px) {
+            .wrapper {
+                display: grid;
+            }
+            iframe {
+                width: 550px;
+                height: 500px;
+            }
+            .mobile-display {
+                display: none;
+            }
+            .desktop-display {
+                display: block;
+            }
+            .container {
+                display: grid;
+                grid-template-areas: "contact hours form" "map map form" "footer footer footer";
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 0.5fr;
+            }
+            .hallway-contact {
+                display: flex;
+                flex-direction: row;
+            }
+            .contact-info {
+                grid-area: contact;
+            }
+            .hours-of-operation {
+                grid-area: hours;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .hours-of-operation p {
+                min-width: 70px;
+                width: 170px;
+                line-height: 1.1rem;
+            }
+            .hours-of-operation img {
+                width: 30px;
+                height: 30px;
+            }
+            .hours-of-operation div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .location {
+                grid-area: map;
+            }
+            .contact-form {
+                grid-area: form;
+            }
+            footer {
+                grid-area: footer;
+            }
+        }
+        
+        @media only screen and (min-width: 1000px) {
+            iframe {
+                width: 750px;
+                height: 700px;
+            }
+        }
