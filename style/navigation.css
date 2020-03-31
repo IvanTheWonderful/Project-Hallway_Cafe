@@ -39,6 +39,7 @@ nav {
     position: absolute;
     left: 0;
     width: 100vw;
+    background: white;
 }
 
 .nav-mobile a img{
