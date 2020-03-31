@@ -28,18 +28,6 @@ hr {
     border: 1px solid #979797;
 }
 
-.desktop-display {
-    display: none;
-}
-
-/* .mobile-display {
-    background: #ffffff;
-    width: 375px;
-    height: 54px;
-    padding-left: 35px;
-    width: 600px;
-} */
-
 .feature-food-carousel {
     background: #ffd16b;
     padding: 5% 0;
@@ -51,20 +39,27 @@ hr {
     padding: 0 10%;
 }
 
+svg {
+    display: none;
+}
+
 .feature-description p {
     text-align: left;
     padding: 0 10%;
 }
 
 .menu {
-    text-align: center;
-    margin-top: 40px;
     text-align: left;
+    margin-top: 40px;
     padding: 0 10%;
 }
 
 .menu h2 {
     text-align: center;
+}
+
+.menu-description {
+    line-height: 2em;
 }
 
 .menu img {
@@ -95,6 +90,7 @@ hr {
 
 .quote {
     display: flex;
+    justify-content: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin: 2em 1em;
@@ -170,18 +166,80 @@ hr {
 
 @media only screen and (min-width: 800px) {
 
-    .feature-food-carousel img{
-        max-width: 30%;
+    .feature-food-carousel {
+        display: flex;
+        padding: 0;
+        position: relative;
     }
     
-    .mobile-display {
+    .feature-food-carousel img{
+        max-width: 60%;
+        object-fit: cover;
+    }
+
+    .feature-food-carousel article {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .feature-description {
+        max-width: 30%;
+    }
+
+    svg {
+        display: initial;
+        position: absolute;
+        top: 0;
+        width: 35vw;
+        height: 100%;
+    }
+
+    hr {
         display: none;
     }
 
-    .desktop-display {
-        display: block;
+    .menu-description {
+        display: grid;
+        grid-template-areas: 
+        "title dineInMenu"
+        "description dineInMenu"
+        "button dineInMenu";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr 1fr .5fr;
     }
 
+    .menu-description h2 {
+        grid-area: title;
+        font-size: 60px;
+    }
+
+    .menu-description p {
+        grid-area: description;
+        max-width: 100%;
+        justify-self: center;
+    }
+
+    .menu-description img {
+        width: 60%;
+        grid-area: dineInMenu;
+        place-self: center end;
+    }
+
+    .menu-download {
+        grid-area: button;
+        font-size: 28px;
+        font-family: "Lato-Regular";
+    }
+
+    .customer-review-carousel {
+        display: flex;
+        justify-content: center;
+    }
+
+    .quote {
+        max-width: 70%;
+    }
     .dinein-photos {
         display: grid;
         grid-template-areas: "brussel  caesar parfait" "smoked turkey hawaiian" "cappucino pancetta tartar" "soup buckwheat nonna";
