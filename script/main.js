@@ -65,6 +65,6 @@ function showSlides() {
     }
     slideCount++;
     if(slideCount > slides.length){slideCount = 1}
-    slides[slideCount-1].style.display = "block";
+    slides[slideCount-1].style.display = "inherit";
     setTimeout (showSlides, 3500)
 }
