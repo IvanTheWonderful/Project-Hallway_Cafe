@@ -23,13 +23,13 @@ button {
     width: 80%;
 }
 
+svg {
+    display: none;
+}
+
 .hero-banner {
     margin-top: 6em;
     max-width: 100%;
-}
-
-.mySlide {
-    display: none;
 }
 
 .hero-statement {
@@ -71,10 +71,6 @@ button {
 
 .catering-menu h2 {
     color: #f4f7f2;
-}
-
-img.texture-illustration {
-    display: none;
 }
 
 .menu-cover-wrapper {
@@ -119,15 +115,80 @@ input, textarea {
     font-size: 16px;
     width: 100%;
     border: 2px solid #e4a388;
+} 
+
+@media only screen and (min-width: 1050px) {
+
+.catering-hero {
+    padding: 0 10%;
 }
 
-footer {
-    text-align: center;
-    color: #585a5e;
-}
+    .catering-hero img {
+        width: 100vw;
+        height: 35em;
+        object-fit: cover;
+    }
 
-footer a {
-    color: #585a5e;
-    text-decoration: none;
-    margin: 1rem;
+    .mousse-cups img{
+        object-position: bottom;
+    }
+
+    .hero-statement {
+        display: flex;
+    }
+
+    .ampersand {
+        align-self: center;
+    }
+
+    .catering-menu {
+        display: grid;
+        grid-template-areas:
+        ". menuCover . . ."
+        ". menuCover . downloadButton downloadButton"
+        ". menuCover . title title";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        max-width: 80%;
+        margin: 10% 10%;
+    }
+
+    svg {
+        display: initial;
+        position: absolute;
+        width: 82%;
+        height: 70%;
+    }
+
+    .catering-menu h2 {
+        grid-area: title;
+    }
+
+    .catering-menu div{
+        grid-area: menuCover;
+    }
+
+    .catering-menu a {
+        grid-area: downloadButton;
+    }
+
+    .menu-cover-wrapper {
+        width: 120%;
+        position: relative;
+        top: 75px;
+    }
+
+    .catering-contact {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 5%;
+    }
+
+    .contact-info-wrapper {
+        max-width: 100%;
+    }
+
+    input, textarea {
+      width: 25em; 
+    }
 }
