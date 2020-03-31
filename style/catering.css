@@ -117,7 +117,7 @@ input, textarea {
     border: 2px solid #e4a388;
 } 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 
 .catering-hero {
     padding: 0 10%;
@@ -189,6 +189,6 @@ input, textarea {
     }
 
     input, textarea {
-      width: 30em; 
+      width: 25em; 
     }
 }
