@@ -68,3 +68,19 @@ function showSlides() {
     slides[slideCount-1].style.display = "inherit";
     setTimeout (showSlides, 3500)
 }
+
+// Dine in review carousel
+let reviewCount = 0
+showReviews()
+
+function showReviews() {
+    let i;
+    let reviews = document.getElementsByClassName("myReview")
+    for (i=0; i<reviews.length; i++) {
+        reviews[i].style.display = "none";
+    }
+    reviewCount++;
+    if(reviewCount > reviews.length){reviewCount = 1}
+    reviews[reviewCount-1].style.display = "inherit";
+    setTimeout (showReviews, 3500)
+}
