@@ -35,6 +35,8 @@ nav {
     margin: 0 0.2rem;
 }
 
+
+
 .nav-mobile {
     position: absolute;
     left: 0;
@@ -215,6 +217,22 @@ nav {
 
 /* This active-page class is given to the corresponding <a> in <nav> in each HTML file.
 The purpose of this is to create an "active" style for the links */
-nav .nav-desktop .active-page, nav .nav-mobile .active-page {
-    color: burlywood;
+nav .nav-desktop .active-page-blog, nav .nav-mobile .active-page-blog {
+    color: #e4a388;
+}
+
+nav .nav-desktop .active-page-contact, nav .nav-mobile .active-page-contact {
+    color: #ffd16b;
+}
+
+nav .nav-desktop .active-page-catering, nav .nav-mobile .active-page-catering {
+    color: #97c57a;
+}
+
+nav .nav-desktop .active-page-dineIn, nav .nav-mobile .active-page-dineIn {
+    color: #ffd16b;
+}
+
+nav .nav-desktop .active-page-aboutUs, nav .nav-mobile .active-page-aboutUs {
+    color: #139c93;
 }
