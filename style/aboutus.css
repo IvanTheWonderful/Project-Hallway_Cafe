@@ -3,12 +3,16 @@
 h1, h2, h3 {
   text-transform: uppercase;
   font-family: 'Montserrat-Bold';
-  font-size: 22px;
+  font-size: 24px;
 }
 
-p {
+p, label{
   font-family: 'Lato-Regular';
+  font-size: 19px;
+  color: #585a5e;
+  
 }
+
 
 .img-bar {
   max-width: 100%;
@@ -59,7 +63,7 @@ p {
 }
 
 .about-us p {
-  text-align: left;
+  text-align: center;
 }
 
 .about-us h1 {
@@ -69,14 +73,19 @@ p {
 }
 
 .about-us img {
-  width: 25%;
+  width: 20%;
+  margin-bottom: 1em;
+} 
+
+.about-statements div {
+  margin-bottom: 3em;
 }
 
 .alumni {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/About Us/dining-booths.jpg");
+  background-image: url("../img/About-Us/dining-booths.jpg");
   height: 30em;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -94,7 +103,8 @@ p {
 .alumni-recognition img {
   width: 5rem;
   height: 5rem;
-  margin-right: 10px;
+  margin-right: 30px;
+  align-self: center;
 }
 
 .carousel-quotes {
@@ -120,6 +130,10 @@ p {
   padding: 0 10%;
 }
 
+.education-support h1 {
+  margin-bottom: 2em;
+}
+
 .education-support h2 {
   color: #139c93;
 }
@@ -129,8 +143,15 @@ p {
   object-fit: contain;
 }
 
-label {
-  font-family: 'Lato-Regular';
+.program-categories {
+  margin-bottom: 3em;
+}
+
+.program-call-to-action {
+  font-size: 25px;
+  color: #139c93;
+  text-align: center;
+  font-weight: bolder;
 }
 
 input,
@@ -160,7 +181,7 @@ form button {
 @media only screen and (min-width: 1050px) {
 
   p {
-    font-size: 26px;
+    font-size: 24px;
   }
   
   .img-bar {
@@ -200,11 +221,12 @@ form button {
     font-size: 60px;
     align-self: flex-end;
     margin-right: 2em;
-    color: #139c93;
+    color: #97c57a;
+    margin-bottom: 0;
   }
 
   .about-us div {
-    padding: 0 5%;
+    padding: 0 1em;
   }
 
   .about-us img {
@@ -237,7 +259,7 @@ form button {
   }
 
   .corporate-sponsors img {
-    max-width: 25%;
+    max-width: 9%;
     object-fit: contain;
   }
 

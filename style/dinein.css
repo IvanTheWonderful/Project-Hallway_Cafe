@@ -60,6 +60,12 @@ svg {
 
 .menu-description {
     line-height: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-description p {
+    margin-bottom: 2em;
 }
 
 .menu img {
@@ -71,13 +77,12 @@ svg {
     margin-bottom: 1em;
 }
 
-.menu a {
-    text-decoration: none;
+.menu-description a{
+    align-self: center;
 }
 
 .menu-download {
     background: #139c93;
-    border: 3px solid #139c93;
     color: #FFFFFF;
     font-family: 'Montserrat-Bold';
     font-size: 16px;
@@ -191,7 +196,7 @@ svg {
         display: initial;
         position: absolute;
         top: 0;
-        width: 35vw;
+        width: 33vw;
         height: 100%;
     }
 
@@ -287,16 +292,4 @@ svg {
     .nonna-nightmare {
         grid-area: nonna;
     }
-}
-
-footer {
-    text-align: center;
-    margin: 0 3rem;
-    color: #585a5e;
-}
-
-footer a {
-    color: #585a5e;
-    text-decoration: none;
-    margin: 1rem;
 }
