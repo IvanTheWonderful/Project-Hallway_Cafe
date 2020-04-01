@@ -56,9 +56,6 @@ button:hover {
 
 /* Start: media query */
 @media only screen and (min-width: 1050px) {
-    .homepage {
-
-    }
     
     .homepage h1 {
         font-size: 45px;
