@@ -177,7 +177,6 @@ footer a {
 }
 
 @media only screen and (min-width: 600px) {
-
     .mobile-display {
         display: none;
     }
@@ -186,17 +185,13 @@ footer a {
     }
     .container {
         display: grid;
-        grid-template-areas: 
-        "contact hours . form" 
-        "map map . form" 
-        "footer footer footer footer";
+        grid-template-areas: "contact hours . form" "map map . form" "footer footer footer footer";
         grid-template-columns: 1fr 1fr .5fr 2fr;
         grid-template-rows: 1fr 1fr 0.5fr;
     }
     .hallway-contact {
-        /* display: flex;
-        flex-direction: row; */
-        border: orange 5px solid;
+        display: flex;
+        flex-direction: row;
     }
     .hallway-contact h2 {
         font-size: .9rem;
@@ -212,8 +207,8 @@ footer a {
     .hours-of-operation {
         grid-area: hours;
         flex-direction: column;
-        justify-items: flex-end;
-        border: blue 5px solid;
+        /*align-items: flex-end;*/
+        padding-left: 100px;
     }
     .hours-of-operation p {
         min-width: 70px;
@@ -224,11 +219,10 @@ footer a {
         width: 30px;
         height: 30px;
     }
-    /*.hours-of-operation div {
+    .hours-of-operation div {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }*/
+        align-self: flex-end;
+    }
     iframe {
         width: 55vw;
     }
