@@ -111,6 +111,10 @@ p {
   justify-content: center;
 }
 
+.corporate-sponsors {
+  display: none;
+}
+
 .education-support {
   text-align: left;
   padding: 0 10%;
@@ -153,7 +157,7 @@ form button {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 
   p {
     font-size: 26px;
@@ -230,6 +234,16 @@ form button {
 
   .carousel-quotes span {
     max-width: 30%;
+  }
+
+  .corporate-sponsors img {
+    max-width: 25%;
+    object-fit: contain;
+  }
+
+  .corporate-sponsors {
+    display: flex;
+    justify-content: space-around;
   }
 
   .education-support {
