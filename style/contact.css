@@ -224,7 +224,8 @@ footer a {
         align-self: flex-end;
     }
     iframe {
-        width: 55vw;
+        width: 45vw;
+        height: 300px;
     }
     .location {
         grid-area: map;
@@ -236,6 +237,9 @@ footer a {
         grid-area: form;
         padding-right: 10px;
         max-width: 100%
+    }
+    .contact-form img {
+        padding-left: 50px;
     }
     .contact-form h2 {
         display: none;
