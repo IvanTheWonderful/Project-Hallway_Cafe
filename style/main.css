@@ -35,22 +35,23 @@ body {
     margin-bottom: 1rem;
 }
 
-.homepage-buttons button {
+.homepage-buttons a {
     background: #139c93;
     color: white;
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 16px;
     font-weight: bolder;
     border: none;
     padding: 0.5em 1em;
-    height: 2em;
     letter-spacing: 1px;
     width: max-content;
     font-family: 'Montserrat-Bold';
+    text-decoration: none;
 }
 
-button:hover {
+a:hover {
     cursor: pointer;
+    opacity: 0.8;
 }
 /* End: homepage */
 
@@ -69,7 +70,8 @@ button:hover {
         justify-content: flex-end;
     }
 
-    .homepage-buttons button {
+    .homepage-buttons a {
+        padding: 1em;
         margin-right: 4em;
         font-size: 20px;
     }
@@ -81,6 +83,6 @@ button:hover {
 
     .homepage h1 {
         font-size: 50px;
-        max-width: 30%;
+        max-width: 45%;
     }
 }

@@ -1,6 +1,8 @@
 p, label{
     font-family: 'Lato-Regular';
     font-size: 19px;
+    color: #585a5e;
+    
 }
 
 h2 {
@@ -79,7 +81,7 @@ svg {
 }
 
 .catering-contact{
-    margin-top: 2em;
+    margin: 2em 2em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -87,17 +89,22 @@ svg {
 
 .catering-contact p {
     text-align: left;
-    padding: 0 10%;
 }
 
 .catering-contact span {
     display: flex;
     margin-bottom: 1em;
-    text-align: left;
-    padding:  0 10%;
+    text-align: center;
+}
+
+.catering-icon {
+    width: 2em;
+    margin-right: 2em;
+    align-self: center;
 }
 
 form {
+    margin-top: 5em;
     text-align: left;
     padding: 0 10%;
 }
@@ -114,14 +121,23 @@ input {
 input, textarea {
     font-size: 16px;
     width: 100%;
-    border: 2px solid #e4a388;
+    border: 2px solid #ffd16b;
 } 
 
 @media only screen and (min-width: 1050px) {
 
-.catering-hero {
-    padding: 0 10%;
-}
+    h2 {
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 2em;
+    }
+
+    .catering-hero {
+        padding: 0 10%;
+    }
 
     .catering-hero img {
         width: 100vw;
@@ -137,31 +153,38 @@ input, textarea {
         display: flex;
     }
 
+    .hero-statement article {
+        padding: 0;
+    }
+
     .ampersand {
         align-self: center;
+        font-size: 40px;
+        margin: 0 5%;
     }
 
     .catering-menu {
         display: grid;
         grid-template-areas:
-        ". menuCover . . ."
         ". menuCover . downloadButton downloadButton"
         ". menuCover . title title";
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
         max-width: 80%;
-        margin: 10% 10%;
+        margin: 15% 10%;
     }
 
     svg {
         display: initial;
         position: absolute;
         width: 82%;
-        height: 70%;
+        height: 60%;
     }
 
     .catering-menu h2 {
+        font-size: 20px;
         grid-area: title;
+        align-self: end;
     }
 
     .catering-menu div{
@@ -170,12 +193,13 @@ input, textarea {
 
     .catering-menu a {
         grid-area: downloadButton;
+        align-self: end;
     }
 
     .menu-cover-wrapper {
-        width: 120%;
+        width: 130%;
         position: relative;
-        top: 75px;
+        top: 80px;
     }
 
     .catering-contact {
@@ -186,6 +210,11 @@ input, textarea {
 
     .contact-info-wrapper {
         max-width: 100%;
+    }
+
+    .catering-icon {
+        max-width: 2em;
+        align-self: center;
     }
 
     input, textarea {
