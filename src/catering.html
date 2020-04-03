@@ -71,7 +71,7 @@
         </div>
     </section>
     <section class="catering-menu">
-        <svg width="1800" height="982" viewBox="5 0 1515 982" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="1800" height="982" viewBox="10 0 1515 982" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M70.6793 982V19.3283L1433.41 46.0021V982" stroke="white" stroke-width="2"/>
             <path d="M1522 966.033V2L1 102.686V966.033" stroke="white" stroke-width="2"/>
         </svg>
@@ -94,7 +94,13 @@
                     <img class="catering-icon" src="../img/Icons/Mobile-Icons/Icon-Call.svg" alt=""><a href="tel:+1-587-991-5440"><p>587-991-5440</p></a>
                 </span>
         </div>
-        <form action="mailto:catering@hallway.cafe" method="POST" enctype="multipart/form-data" name="cateringForm">
+        <div class="confirmation">
+            <img src="../img/Icons/Mobile-Icons/mobile-logo.png" alt="">
+            <p>
+                Thank you for getting in touch! We'll get back to you as soon as we can.
+            </p>
+        </div>
+        <form class="message-form">
             <div class="hallway-message">
                 <label for="name">Your Name</label><br>
                 <input type="text" id="name" name="name"><br>
@@ -102,7 +108,8 @@
                 <label for="message">Message</label><br>
                 <textarea id="message" rows="10" cols="20"></textarea>
                 <br>
-                <button>
+                <button 
+                class="submission" onClick="submission">
                     Send Message
                 </button>
             </div>

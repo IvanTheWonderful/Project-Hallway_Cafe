@@ -25,7 +25,7 @@ p {
 a {
     text-decoration: none;
     color: #585A5E;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 a:hover {
@@ -92,7 +92,7 @@ a:hover {
 }
 
 .location {
-    padding: 0 10%;
+    margin: 0 10%;
 }
 
 .location h2 {
@@ -173,18 +173,25 @@ form button {
     .container {
         display: grid;
         grid-template-areas: 
-        "contact hours . form" 
-        "map map . form" 
+        "contact hours hours form" 
+        "map map map form" 
         "footer footer footer footer";
-        grid-template-columns: 1fr 1fr .5fr 1fr;
-        grid-template-rows: 1fr 1fr 0.5fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .5fr .5fr 0.05fr;
     }
     .hallway-contact {
         display: flex;
         flex-direction: row;
+        margin-left: 10%;
+    }
+    .hallway-contact span {
+        margin-bottom: 10px;
     }
     .hallway-contact h2 {
-        font-size: .9rem;
+        font-size: 20px;
+    }
+    .hallway-contact a {
+        font-size: 17px;
     }
     .hallway-contact img {
         width: 25px;
@@ -196,11 +203,18 @@ form button {
     .hours-of-operation {
         grid-area: hours;
         flex-direction: column;
-        padding-left: 100px;
+        justify-self: center;
+        /* padding-left: 100px; */
+        /* text-align: center; */
     }
+
+    .hours-of-operation h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
     .hours-of-operation p {
-        min-width: 70px;
-        width: 170px;
+        font-size: 17px;
         line-height: 1.1rem;
     }
     .hours-of-operation img {
@@ -209,18 +223,27 @@ form button {
     }
     .hours-of-operation div {
         display: flex;
-        align-self: flex-end;
     }
     iframe {
-        width: 45vw;
+        width: 60vw;
         height: 300px;
     }
     .location {
         grid-area: map;
+        margin: 2% 7%;
     }
     .location h2 {
-        margin-top: 1px;
+        font-size: 20px;
     }
+
+    .location p {
+        font-size: 17px;
+    }
+
+    .location img {
+        width: 24px;
+    }
+
     .contact-form {
         grid-area: form;
         padding-right: 10px;
@@ -234,5 +257,6 @@ form button {
     }
     footer {
         grid-area: footer;
+        align-self: end;
     }
 }
