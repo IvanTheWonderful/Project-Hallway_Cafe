@@ -84,24 +84,3 @@ function showReviews() {
     reviews[reviewCount-1].style.display = "inherit";
     setTimeout (showReviews, 3500)
 }
-
-//Message Confirmation
-
-let sentMessage = false
-
-document.getElementsByClassName("submission").addEventListener("click", () => {sentMessage = true})
-
-confirmMessage()
-
-confirmMessage = () => {
-    let message = document.getElementsByClassName("confirmation")
-    let form = document.getElementsByClassName("message-form")
-    if (sentMessage = true) {
-        message.style.display = "none"
-        form.style.display = "initial"
-    }
-    else {
-        message.style.display = "initial"
-        form.style.display = "none"
-    }
-}
