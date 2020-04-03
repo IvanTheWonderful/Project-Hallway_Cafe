@@ -85,6 +85,8 @@ function showReviews() {
 	setTimeout(showReviews,3500)
 }
 
+// Confirmation popup
+
 function SubmitBtn() {
 	document.getElementById("confirmation").style.display="none";
 	document.getElementById("success").style.display="block";

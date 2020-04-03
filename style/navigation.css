@@ -9,7 +9,7 @@ nav {
     width: 100%;
     padding: 10px 0;
     background: white;
-    z-index: 999;
+    z-index: 99;
     font-family: 'Montserrat-Bold';
     letter-spacing: 2px;
 }
@@ -31,7 +31,8 @@ nav a:hover {
 
 .nav-desktop a, .nav-desktop .fa {
     display: none;
-    color: black;
+
+    color: #585a5e;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -39,8 +40,6 @@ nav a:hover {
 .nav-desktop-socialMedia a {
     margin: 0 0.2rem;
 }
-
-
 
 .nav-mobile {
     position: absolute;
@@ -50,14 +49,14 @@ nav a:hover {
 }
 
 .nav-mobile a img{
-    width: 14rem;
+    width: 12rem;
     margin-left: 1rem;
 }
 
 .nav-mobile-button {
     position: absolute;
     right: 1rem;
-    top: 0.5rem;
+    top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +146,7 @@ nav a:hover {
 .nav-mobile-list li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: #585a5e;
     font-size: 1.5rem;
 }
 /* Start: animation */
@@ -210,7 +209,8 @@ nav a:hover {
 /* End: animation */
 
 /* Start: media query */
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:900px) {
+    
     .nav-mobile {
         display: none;
     }
@@ -218,7 +218,12 @@ nav a:hover {
     .nav-desktop a, .nav-desktop .fa {
         display: initial;
     }
+
+    nav {
+        font-size: 18px;
+    }
 }
+/* End: media query */
 
 /* This active-page class is given to the corresponding <a> in <nav> in each HTML file.
 The purpose of this is to create an "active" style for the links */

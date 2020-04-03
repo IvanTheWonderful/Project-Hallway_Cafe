@@ -124,6 +124,10 @@ a:hover {
   justify-content: center;
 }
 
+.authorName {
+  font-size: 17px;
+}
+
 .corporate-sponsors {
   display: none;
 }
@@ -198,8 +202,9 @@ form button {
     "door door burger veggie";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    max-width: 98%;
+    max-width: 100%;
     margin-top: 7em;
+    margin-bottom: 1em;
   }
   
   .front-door {
@@ -298,12 +303,17 @@ form button {
     justify-content: space-around;
   }
 
-  .program-call-to-action{
+  .program-call-to-action {
     font-size: 30px;
   }
 
+  form button {
+    margin-bottom: 2em;
+    height: 3em;
+  }
+
   .heart-cookies {
-    width: 40%;
+    width: 50%;
     margin-right: 20px;
   }
 

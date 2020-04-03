@@ -117,12 +117,20 @@ svg {
 
 .catering-icon {
     width: 2em;
-    margin-right: 2em;
+    margin: 0 2em;
     align-self: center;
 }
 
+.message-form {
+    display: initial;
+}
+
+.confirmation {
+    display: none;
+}
+
 form {
-    margin-top: 5em;
+    margin-top: 2em;
     text-align: left;
     padding: 0 10%;
 }
@@ -169,6 +177,11 @@ textarea {
         display: flex;
         margin: 0 10%;
     }
+
+    .hero-statement h2 {
+        font-size: 50px;
+    }
+
     .hero-statement article {
         padding: 0;
     }
@@ -179,7 +192,9 @@ textarea {
     }
     .catering-menu {
         display: grid;
-        grid-template-areas: ". menuCover . downloadButton downloadButton" ". menuCover . title title";
+        grid-template-areas:
+        ". menuCover . downloadButton downloadButton"
+        ". menuCover title title title";
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr .5fr;
         max-width: 100%;
@@ -190,14 +205,14 @@ textarea {
         display: initial;
         position: absolute;
         z-index: 0;
-        max-width: 100%;
+        max-width: 98%;
         height: 80%;
     }
     .catering-menu h2 {
-        font-size: 24px;
+        font-size: 25px;
         grid-area: title;
         align-self: end;
-        justify-self: left;
+        justify-self: end;
         width: 80%;
     }
     .catering-menu div {
@@ -210,6 +225,11 @@ textarea {
         width: 80%;
         z-index: 3;
     }
+
+    .catering-menu button {
+        font-size: 20px;
+    }
+
     .menu-cover-wrapper {
         width: 130%;
         position: relative;
@@ -232,8 +252,41 @@ textarea {
     textarea {
         width: 33vw;
     }
+
+    input {
+        margin-bottom: 2em;
+    }
+    textarea {
+        height: 15em;
+    }
     form {
         padding: 0;
         margin-right: 5em;
+    } 
+    
+    #success {
+        margin-right: 10em;
+        margin-top: 5em;
     }
+    
+    #success h3 {
+        font-size: 30px;
+        color: #585a5e;
+    }
+
+    footer {
+        margin-top: 5em;
+    }
+
+}
+
+@media only screen and (min-width:1250px) {
+    .catering-menu h2 {
+        font-size: 30px;
+    }
+
+    .catering-menu button {
+        font-size: 25px;
+    }
+  
 }
