@@ -52,5 +52,22 @@ This is our final project at Red Academy, which is done with a real client. The 
 	1. Work on dine-in styling
 	2. Zoom call to do some trouble shooting
 	
+	### 03 30 20
+  1. Complete dine-in styling
+	2. Continue work on contact page 
+
+	### 03 31 20
+	1. Group zoom call with instructor to go over site
+	2. Group zoom call with team members to discuss issues
+  3. Work on more styling
+
+	### 04 01 
+	1. Mock Presentation
+	2. Address issues addressed after presentation
+	3. Started working on presentation
+
+	### 04 02 20
+	1. Edited presentation based on input frm UX UI teams
+	2. Did pop up javascript
 
 
