@@ -9,7 +9,7 @@ nav {
     width: 100%;
     padding: 10px 0;
     background: white;
-    z-index: 999;
+    z-index: 99;
     font-family: 'Montserrat-Bold';
     letter-spacing: 2px;
 }
@@ -36,8 +36,6 @@ nav {
     margin: 0 0.2rem;
 }
 
-
-
 .nav-mobile {
     position: absolute;
     left: 0;
@@ -46,14 +44,14 @@ nav {
 }
 
 .nav-mobile a img{
-    width: 14rem;
+    width: 12rem;
     margin-left: 1rem;
 }
 
 .nav-mobile-button {
     position: absolute;
     right: 1rem;
-    top: 0.5rem;
+    top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +204,7 @@ nav {
 /* End: animation */
 
 /* Start: media query */
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:900px) {
     .nav-mobile {
         display: none;
     }
@@ -215,6 +213,7 @@ nav {
         display: initial;
     }
 }
+/* End: media query */
 
 /* This active-page class is given to the corresponding <a> in <nav> in each HTML file.
 The purpose of this is to create an "active" style for the links */
