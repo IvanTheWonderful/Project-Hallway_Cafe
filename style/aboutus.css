@@ -186,6 +186,10 @@ form button {
   p {
     font-size: 24px;
   }
+
+  footer p {
+    font-size: 19px;
+  }
   
   .img-bar {
     display: grid;
