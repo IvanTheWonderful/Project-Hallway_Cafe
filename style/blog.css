@@ -84,8 +84,11 @@ a:hover {
 
 .blog-subscribe label {
     text-transform: uppercase;
-    font-size: 2rem;
     margin-right: 1rem;
+    font-family: 'Lato-Regular';
+    font-size: 2rem;
+    color: #585a5e;
+    letter-spacing: 1px;
 }
 
 .blog-subscribe-email {
@@ -99,6 +102,12 @@ a:hover {
     width: 100%;
     height: 33px;
     z-index: 5;
+}
+
+.blog-subscribe-email input::placeholder {
+    font-family: 'Lato-Regular';
+    color: #5e5e5e9a;
+    letter-spacing: 1px;
 }
 
 .blog-subscribe-email-submit {
