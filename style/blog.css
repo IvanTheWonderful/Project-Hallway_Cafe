@@ -2,6 +2,16 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
+p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
 /* Start: section blog-posts */
 .blog {
     position: relative;
