@@ -79,7 +79,7 @@ a:hover {
 .hours-of-operation {
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    padding: 13px 10%;
 }
 
 .hours-of-operation div {

@@ -262,7 +262,17 @@ textarea {
     form {
         padding: 0;
         margin-right: 5em;
-    }    
+    } 
+    
+    #success {
+        margin-right: 10em;
+        margin-top: 5em;
+    }
+    
+    #success h3 {
+        font-size: 30px;
+        color: #585a5e;
+    }
 
 }
 
