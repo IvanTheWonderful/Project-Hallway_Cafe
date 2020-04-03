@@ -1,4 +1,5 @@
-p, label{
+p,
+label {
     font-family: 'Lato-Regular';
     font-size: 19px;
     color: #585a5e;
@@ -27,7 +28,8 @@ img {
 }
 
 button {
-    color: #585A5E;;
+    color: #585A5E;
+    ;
     font-size: 16px;
     font-family: 'Lato-Bold';
     letter-spacing: 3.36px;
@@ -78,7 +80,7 @@ svg {
 
 .catering-menu button {
     text-transform: uppercase;
-    padding: 1em ;
+    padding: 1em;
     border: 4px white solid;
     margin: 1em 0;
     background: #97c57a;
@@ -95,7 +97,7 @@ svg {
     margin: 0 auto;
 }
 
-.catering-contact{
+.catering-contact {
     margin: 2em 2em;
     text-align: center;
     display: flex;
@@ -135,7 +137,7 @@ form {
 
 form button {
     margin: 0 10%;
-    border: 2px solid #979797 ;
+    border: 2px solid #979797;
     height: 2em;
 }
 
@@ -143,33 +145,34 @@ input {
     height: 2em;
 }
 
-input, textarea {
+input,
+textarea {
     font-size: 16px;
     width: 100%;
     border: 2px solid #e4a388;
-} 
+}
+
+#success {
+    display: none;
+    margin-left: auto;
+}
 
 @media only screen and (min-width: 1050px) {
-
     h2 {
         font-size: 40px;
     }
-
-    p{
+    p {
         font-size: 18px;
         line-height: 1.5em;
     }
-
     .catering-hero img {
         width: 100vw;
         height: 35em;
         object-fit: cover;
     }
-
-    .mousse-cups img{
+    .mousse-cups img {
         object-position: bottom;
     }
-
     .hero-statement {
         display: flex;
         margin: 0 10%;
@@ -182,13 +185,11 @@ input, textarea {
     .hero-statement article {
         padding: 0;
     }
-
     .ampersand {
         align-self: center;
         font-size: 40px;
         margin: 0 5%;
     }
-
     .catering-menu {
         display: grid;
         grid-template-areas:
@@ -200,7 +201,6 @@ input, textarea {
         margin: 0 auto;
         margin-bottom: 3em;
     }
-
     svg {
         display: initial;
         position: absolute;
@@ -208,7 +208,6 @@ input, textarea {
         max-width: 98%;
         height: 80%;
     }
-
     .catering-menu h2 {
         font-size: 25px;
         grid-area: title;
@@ -216,11 +215,9 @@ input, textarea {
         justify-self: end;
         width: 80%;
     }
-
-    .catering-menu div{
+    .catering-menu div {
         grid-area: menuCover;
     }
-
     .catering-menu a {
         grid-area: downloadButton;
         align-self: end;
@@ -238,25 +235,22 @@ input, textarea {
         position: relative;
         top: 80px;
     }
-
     .catering-contact {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 8em;
     }
-
     .contact-info-wrapper {
         max-width: 45%;
         margin-left: 3em;
     }
-
     .catering-icon {
         max-width: 2em;
         align-self: center;
     }
-
-    input, textarea {
-      width: 33vw; 
+    input,
+    textarea {
+        width: 33vw;
     }
 
     input {
@@ -265,12 +259,10 @@ input, textarea {
     textarea {
         height: 15em;
     }
-
     form {
         padding: 0;
         margin-right: 5em;
-    }
-    
+    }    
 
 }
 
@@ -282,4 +274,5 @@ input, textarea {
     .catering-menu button {
         font-size: 25px;
     }
+  
 }
