@@ -130,26 +130,7 @@ svg {
 }
 
 form {
-    margin-top: 2em;
-    text-align: left;
     padding: 0 10%;
-}
-
-form button {
-    margin: 0 10%;
-    border: 2px solid #979797;
-    height: 2em;
-}
-
-input {
-    height: 2em;
-}
-
-input,
-textarea {
-    font-size: 16px;
-    width: 100%;
-    border: 2px solid #e4a388;
 }
 
 #success {
@@ -248,21 +229,10 @@ textarea {
         max-width: 2em;
         align-self: center;
     }
-    input,
-    textarea {
-        width: 33vw;
-    }
 
-    input {
-        margin-bottom: 2em;
+    .hallway-message {
+        margin-top: 3em;
     }
-    textarea {
-        height: 15em;
-    }
-    form {
-        padding: 0;
-        margin-right: 5em;
-    } 
     
     #success {
         margin-right: 10em;
