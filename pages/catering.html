@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../style/navigation.css">
     <link rel="stylesheet" href="../style/catering.css">
+    <link rel="stylesheet" href="../style/form.css">
     <link rel="stylesheet" href="../style/footer.css">
     <script src="../script/main.js" defer></script>
 </head>
@@ -123,15 +124,15 @@
             <img src="../img/Icons/Desktop-Icons/logo.png" alt="The logo of Hallway Cafe." />
             <h3>Thanks for getting in touch! <br /> We’ll get back as soon as we can.</h3>
         </div>
-        <form action="mailto:" id="confirmation" class="message-form">
+        <form class="catering-form" required>
             <div class="hallway-message">
-                <label for="name">Your Name</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Your Email</Address><br></label> <input type="email" id="email" name="email"></br>
+                <label for="name">Name</label><br>
+                <input class="peach-border" type="text" id="name" name="name" required><br>
+                <label for="email">Email</Address><br></label> <input class="peach-border" type="email" id="email" name="email" required></br>
                 <label for="message">Message</label><br>
-                <textarea id="message" rows="10" cols="20"></textarea>
+                <textarea class="peach-border" id="message" rows="10" cols="20" required></textarea>
                 <br>
-                <button onClick='SubmitBtn();'>Send Message</button>
+                <button onClick='SubmitBtn()'>Send Message</button>
             </div>
         </form>
     </section>
@@ -140,7 +141,7 @@
         <p>
             <a target="_blank"
                 href="https://www.google.ca/maps/place/The+Hallway+Cafe/@53.5452164,-113.4927258,17z/data=!3m1!4b1!4m5!3m4!1s0x53a02379b746ec93:0xc2ad7469f536fa6e!8m2!3d53.5452132!4d-113.4905318?hl=en&authuser=0">Hallway
-                Caf&eacute; | 1 Sir Winston Churchill Square, Edmonton, AB </a>|
+                Café | 1 Sir Winston Churchill Square, Edmonton, AB </a>|
             <a href="tel:+1-780-413-8060">Phone: 780-413-8060 </a>|<a href="mailto:amacbean@e4calberta.org">
                 amacbean@e4calberta.org</a>
         </p>

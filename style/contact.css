@@ -114,54 +114,14 @@ iframe {
     height: 200px;
 }
 
-form label {
-    margin: 10px 0;
-}
-
 .contact-form h2 {
-    text-align: left;
     padding: 10%;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
     padding: 0 10%;
-    text-align: left;
-    font-family: 'Lato-Bold';
-    font-size: 16px;
-    letter-spacing: 0.66px;
-    color: #9b9c9e;
 }
 
-form button {
-    color: #585A5E;
-    ;
-    font-size: 18px;
-    font-family: 'Lato-Bold';
-    letter-spacing: 3.36px;
-    width: 80%;
-    text-transform: uppercase;
-    margin: 5% 10%;
-    border: 2px solid #979797;
-    cursor: pointer;
-}
-
-#name,
-#email,
-#subject {
-    border: 3px solid #ffd16b;
-    font-family: Lato-Heavy;
-    height: 30px;
-}
-
-#message {
-    border: 3px solid #ffd16b;
-}
-
-#submit {
-    margin-top: 20px;
-}
 
 @media only screen and (min-width: 1050px) {
     .mobile-display {
@@ -204,8 +164,6 @@ form button {
         grid-area: hours;
         flex-direction: column;
         justify-self: center;
-        /* padding-left: 100px; */
-        /* text-align: center; */
     }
 
     .hours-of-operation h2 {
@@ -246,15 +204,8 @@ form button {
 
     .contact-form {
         grid-area: form;
-        padding-right: 10px;
-        max-width: 100%
     }
-    .contact-form img {
-        padding-left: 50px;
-    }
-    .contact-form h2 {
-        display: none;
-    }
+
     footer {
         grid-area: footer;
         align-self: end;
