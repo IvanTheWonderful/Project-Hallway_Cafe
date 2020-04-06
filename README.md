@@ -107,10 +107,10 @@ This is our final project at Red Academy, which is done with a real client. The 
 
 	 - abstract values like 3500 - store as a const
 
-	### Git
+### Git
 
-		- make sure you guys have this version saved
-
-		- look up a complete git rebase to clean the repo
-
-		 - check the size before delivery [ current size is ~45MB due to .git/objects/pack... which has all git history]
+	- make sure you guys have this version saved
+	
+	- look up a complete git rebase to clean the repo
+	
+	- check the size before delivery [ current size is ~45MB due to .git/objects/pack... which has all git history]
