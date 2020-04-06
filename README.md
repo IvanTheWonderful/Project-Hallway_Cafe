@@ -17,39 +17,12 @@ This is our final project at Red Academy, which is done with a real client. The 
 
 ## Review JS
 
-### HTML
-	- page title accent on e is different than logo [é - e acute vs è - e grave]
-
-	- use the actual characters (see above) rather than `&eacute`
-
-	- some links are capitalized and others likely have css `text-transform: uppercase` please make everything uniform 
-
-	- add stronger focus states to teal button (go to home page and navigate using tab to see)
-
-	- change 'src' folder name ('src' is generally used as a master folder to contain all the content for building the website - this is to seperate it from a 'dist' folder (delivery) and package.json etc - here you don't really have a build step - so you dont need 'src'). Here your 'src' folder is really justs 'pages'
-
-	- invalid `<br>` element about-us line 146
-
-	- missing alt text on icons contact page
-
-	- double `<br /> <br />` contact us line 86 [https://www.tutorialspoint.com/What-is-the-correct-way-of-using-br-br-or-br-in-HTML]
-
-	- all forms -> look at `required` and form validation *** [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form]
-
-
-### CSS
-
-	- remove unused css (comments are good but commented out code is not)
-
-	- were all those fonts used? removed unused references and files
-
 ### JS
 
 	- contact response `Thanks for subscribe! ${email}` could be rewritten
 
-	 - showSLides could be simplified with modulus (%) [look up the operator]
+	- showSLides could be simplified with modulus (%) [look up the operator]
 
-	 - abstract values like 3500 - store as a const
 
 ### Git
 

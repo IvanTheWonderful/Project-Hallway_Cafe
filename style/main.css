@@ -57,6 +57,10 @@ a:hover {
     font-family: 'Montserrat-Bold';
     text-decoration: none;
 }
+
+.homepage-buttons a:focus {
+    outline: 5px double #ffd16b;
+}
 /* End: homepage */
 
 /* Start: media query */
