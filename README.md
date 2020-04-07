@@ -2,18 +2,24 @@
 This is our final project at Red Academy, which is done with a real client. The goal is to create a website based on design provided by UI/UX team.
 
 # Instruction on How to Add New Posts from Facebook
-  1. make a PUBLIC post in facebook. Only public posts can be used here
-  2. click the 3 dot button at the top right corner of the post
-  3. select "Embed"
-  4. copy the given URL
-  5. open folder "src"
-  6. open "blog.html"
-  7. find "div class="blog-posts">" (hint: you can use ctrl + F to find it)
-  8. move your cursor to the right side of "div class="blog-posts">"
-  9. press enter
-  10. paste the URL here
-  11. save this file
-  12. upload this file.
+	1. make a PUBLIC post in facebook. Only public posts can be used here
+	2. click the 3 dot button at the top right corner of the post
+	3. select "Embed"
+	4. click "Advanced Settings"
+	5. change 500 to 350 under "The pixel width of the post (between 350 and 750)"
+	6. press enter
+	7. click the blue button that says "Get Code"
+	8. on the top, click IFrame
+	9. copy the given code
+	10. open folder "src"
+	11. open "blog.html"
+	12. find "<div class="blog-posts-desktop">" (hint: you can use ctrl + F to find it)
+	13. move your cursor to the right side of "<div class="blog-posts-desktop">"
+	14. press enter
+	15. type <div> </div>
+	16. paste the code between <div> and </div>
+	17. save this file
+	18. upload this file to the folder named "src".
 
 ## Review JS
 
