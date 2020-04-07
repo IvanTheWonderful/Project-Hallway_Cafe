@@ -1,6 +1,3 @@
-# Red-Project-HallwayCafe
-This is our final project at Red Academy, which is done with a real client. The goal is to create a website based on design provided by UI/UX team.
-
 # Instruction on How to Add New Posts from Facebook
 	1. make a PUBLIC post in facebook. Only public posts can be used here
 	2. click the 3 dot button at the top right corner of the post
@@ -20,13 +17,3 @@ This is our final project at Red Academy, which is done with a real client. The 
 	16. paste the code between <div> and </div>
 	17. save this file
 	18. upload this file to the folder named "src".
-
-## Review JS
-
-### Git
-
-	- make sure you guys have this version saved
-	
-	- look up a complete git rebase to clean the repo
-	
-	- check the size before delivery [ current size is ~45MB due to .git/objects/pack... which has all git history]
