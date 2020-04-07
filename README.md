@@ -17,13 +17,6 @@ This is our final project at Red Academy, which is done with a real client. The 
 
 ## Review JS
 
-### JS
-
-	- contact response `Thanks for subscribe! ${email}` could be rewritten
-
-	- showSLides could be simplified with modulus (%) [look up the operator]
-
-
 ### Git
 
 	- make sure you guys have this version saved
