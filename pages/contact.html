@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page | The Hallway Caf&eacute;</title>
+    <title>Contact Page | The Hallway Café</title>
     <meta name="description"
         content="2. The Hallway afe is located at 1 Churchill Square, Edmonton, AB.   We are open Monday to Friday 7am-330pm.  Our phone number is 780-413-8060.">
     <meta name="description"
-        content="1. Welcome to the Hallway Cafe!  Located in Churchill Square, Downtown Edmonton. 7am-330pm Monday to Friday: 1 Sir Winston Churchill Square, Edmonton, AB">
+        content="1. Welcome to the Hallway Café!  Located in Churchill Square, Downtown Edmonton. 7am-330pm Monday to Friday: 1 Sir Winston Churchill Square, Edmonton, AB">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../style/contact.css">
     <link rel="stylesheet" href="../style/navigation.css">
+    <link rel="stylesheet" href="../style/form.css">
     <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/contact.css">
     <script src="../script/main.js" defer></script>
 </head>
 
@@ -25,7 +26,7 @@
             <a href="./dine-in.html">dine in</a>
             <a href="./catering.html">catering</a>
             <a href="../index.html"><img src="../img/Icons/Desktop-Icons/logo.png"
-                    alt="The logo of Hallway Cafe." /></a>
+                    alt="The logo of Hallway Café." /></a>
             <a class="active-page-contact" href="./contact.html">contact</a>
             <a href="./blog.html">blog</a>
             <div class="nav-desktop-socialMedia">
@@ -36,7 +37,7 @@
         </div>
         <div class="nav-mobile" id="nav-mobile" onclick="toggleButtonAndMenu()">
             <a href="../index.html"><img src="../img/Icons/Mobile-Icons/mobile-logo.png"
-                    alt="The logo of Hallway Cafe." /></a>
+                    alt="The logo of Hallway Café." /></a>
             <!-- The empty divs inside nav-menu-button are used for creating animation effects. -->
             <button class="nav-mobile-button">
                 <div id="nav-mobile-button-div1"></div>
@@ -57,10 +58,10 @@
         <section class="hallway-contact">
             <div class="contact-info">
                 <h2 class="desktop-display">
-                    the hallway caf&eacute;
+                    the hallway café
                 </h2>
                 <span>
-                    <img src="../img/icons/Desktop-Icons/phone.png"> <a href="tel:+1-780-413-8060">
+                    <img src="../img/icons/Desktop-Icons/phone.png" alt="Phone icon"> <a href="tel:+1-780-413-8060">
                         780-413-8060
                     </a>
                 </span>
@@ -69,11 +70,11 @@
                     <a href="mailto:macbean@e4calberta.org">amacbean@e4calberta.org</a>
                 </span>
                 <span>
-                    <img src="../img/Icons/Mobile-Icons/Catering.png" alt="">
+                    <img src="../img/Icons/Mobile-Icons/Catering.png" alt="Catering icon">
                     <a href="mailto:catering@hallway.cafe">catering@hallway.cafe</a>
                 </span>
                 <span>
-                    <img src="../img/Icons/Desktop-Icons/Info.png" alt="">
+                    <img src="../img/Icons/Desktop-Icons/Info.png" alt="General Email icon">
                     <a href="mailto:info@hallway.cafe">info@hallway.cafe</a>
                 </span>
             </div>
@@ -82,15 +83,15 @@
             <!-- <div class="hours"> -->
             <h2>hours</h2>
             <div>
-                <img src="../img/Icons/Desktop-Icons/time.svg" alt="">
-                <p> 7am - 3:30pm Monday-Friday <br /> <br /> Closed Saturday & Sunday</p>
+                <img src="../img/Icons/Desktop-Icons/time.svg" alt="Clock icon">
+                <p> 7am - 3:30pm Monday-Friday <br><br> Closed Saturday & Sunday</p>
             </div>
             <!-- </div> -->
         </section>
         <section class="location">
             <h2>find us</h2>
             <div class="find-us">
-                <img src="../img/Icons/Desktop-Icons/location.png" alt="">
+                <img src="../img/Icons/Desktop-Icons/location.png" alt="Location marker icon">
                 <a target="_blank"
                     href="https://www.google.ca/maps/place/The+Hallway+Cafe/@53.5452164,-113.4927258,17z/data=!3m1!4b1!4m5!3m4!1s0x53a02379b746ec93:0xc2ad7469f536fa6e!8m2!3d53.5452132!4d-113.4905318?hl=en&authuser=0">
                     <p>1 Sir Winston Churchill Square, Edmonton, AB</p>
@@ -101,24 +102,23 @@
                 frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
         <aside class="contact-form">
-            <img class="desktop-display" src="../img/Icons/Desktop-Icons/logo.png" alt="The logo of Hallway Cafe." />
-            <h2>The Hallway Caf&eacute;</h2>
-            <form action="mailto:info@hallway.cafe" method="POST" enctype="multipart/form-data" name="generalInfoForm">
+            <img class="desktop-display" src="../img/Icons/Desktop-Icons/logo.png" alt="The logo of Hallway Café." />
+            <h2>The Hallway Café</h2>
+            <form required>
                 <label for="name">Name</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email Address</Address><br></label> <input type="email" id="email" name="email"></br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email Address</Address><br></label> <input type="email" id="email" name="email" required></br>
                 <label for="subject">Subject</label><br>
-                <input type="text" id="subject" name="subject"><br>
+                <input type="text" id="subject" name="subject" required><br>
                 <label for="message">Message</label><br>
-                <textarea id="message" rows="10" cols="20"></textarea>
+                <textarea id="message" rows="10" cols="20" required></textarea>
                 <button class="infoButton">send message </button>
             </form>
         </aside>
         <footer>
             <p>
                 <a target="_blank"
-                    href="https://www.google.ca/maps/place/The+Hallway+Cafe/@53.5452164,-113.4927258,17z/data=!3m1!4b1!4m5!3m4!1s0x53a02379b746ec93:0xc2ad7469f536fa6e!8m2!3d53.5452132!4d-113.4905318?hl=en&authuser=0">Hallway
-                    Caf&eacute; | 1 Sir Winston Churchill Square, Edmonton, AB </a>|
+                    href="https://www.google.ca/maps/place/The+Hallway+Cafe/@53.5452164,-113.4927258,17z/data=!3m1!4b1!4m5!3m4!1s0x53a02379b746ec93:0xc2ad7469f536fa6e!8m2!3d53.5452132!4d-113.4905318?hl=en&authuser=0">Hallway Café | 1 Sir Winston Churchill Square, Edmonton, AB </a>|
                 <a href="tel:+1-780-413-8060">Phone: 780-413-8060</a><a href="mailto:macbean@e4calberta.org"> |
                     amacbean@e4calberta.org</a>
             </p>

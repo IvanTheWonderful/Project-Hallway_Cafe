@@ -49,12 +49,13 @@ function toggleButtonAndMenu() {
 // in blog.html, when user type email and click button, system will say thank you
 function thanksForSubscribe() {
 	let email=document.getElementById("blog-subscribe-email-input").value;
-	alert(`Thanks for subscribe! ${email}`)
+	alert(`${email} added to mailing list. Thanks for subscribing!`)
 }
 // Slideshow Carousel (automatic)
 
 // Catering Slideshow Carousel (automatic)
 let slideCount=0
+let intervalTime=3500
 showSlides()
 
 function showSlides() {
@@ -63,10 +64,11 @@ function showSlides() {
 	for(i=0; i<slides.length; i++) {
 		slides[i].style.display="none";
 	}
+
 	slideCount++;
 	if(slideCount>slides.length) { slideCount=1 }
 	slides[slideCount-1].style.display="inherit";
-	setTimeout(showSlides,3500)
+	setTimeout(showSlides,intervalTime)
 }
 
 // Dine in review carousel
@@ -79,10 +81,11 @@ function showReviews() {
 	for(i=0; i<reviews.length; i++) {
 		reviews[i].style.display="none";
 	}
+
 	reviewCount++;
 	if(reviewCount>reviews.length) { reviewCount=1 }
 	reviews[reviewCount-1].style.display="inherit";
-	setTimeout(showReviews,3500)
+	setTimeout(showReviews,intervalTime)
 }
 
 // Confirmation popup

@@ -161,31 +161,7 @@ a:hover {
   font-weight: bolder;
 }
 
-input,
-textarea {
-  font-family: 'Lato-Regular';
-  border: #ffd16b 2px solid;
-  width: 95%;
-  margin-bottom: 1.7em;
-}
-
-input {
-  height: 2em;
-}
-
-form button {
-  margin-left: 7%;
-  color: #585A5E;;
-  font-size: 18px;
-  font-family: 'Lato-Bold';
-  letter-spacing: 3.36px;
-  width: 80%;
-  text-transform: uppercase;
-  border: 2px solid #979797 ;
-  cursor: pointer;
-}
-
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 
   p {
     font-size: 24px;
@@ -307,9 +283,8 @@ form button {
     font-size: 30px;
   }
 
-  form button {
-    margin-bottom: 2em;
-    height: 3em;
+  .hallway-message label, input, textarea{
+    margin-left: 30px;
   }
 
   .heart-cookies {
